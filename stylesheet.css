@@ -1,3 +1,7 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
 img {
 	width:300px;
 	height:250px;
@@ -5,17 +9,27 @@ img {
 * {
 	background-color: #cccccc;
 }
+body>div {
+	max-width: 100%;
+}
 .header {
 	background-color: #111111;
+	height: 15%;
+	width: 100%;
+	display: block;
+	position: absolute;
+	border-bottom: 2px solid #5e5e5e;
+	border-bottom-left-radius: 10%;
+	border-bottom-right-radius: 10%;
+}
+h1 {
 	color: #9e0000;
-	font-size: 30px;
+	font-size: 40px;
 	font-weight: bold;
 	font-family: Fondamento, Georgia, serif;
 	padding-left: 5%;
-	height: 40%;
-	width: 100%;
-	border-radius: 20%;
-	z-index: 100;
-	display: block;
-	position: absolute;
+	display: inline;
+	position: relative;
+	top: 30%;
+	background-color: #111111;
 }
