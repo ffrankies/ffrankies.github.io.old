@@ -17,4 +17,5 @@ img {
 	border-radius: 20%;
 	z-index: 100;
 	display: block;
+	position: absolute;
 }
