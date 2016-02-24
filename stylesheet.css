@@ -2,3 +2,14 @@ img {
 	width:300px;
 	height:250px;
 }
+* {
+	background-color: #cccccc;
+}
+.header {
+	background-color: #111111;
+	color: #9e0000;
+	font-size: 30px;
+	//font-weight: bold;
+	font-family: Fondamento, Georgia, serif;
+	padding-left: 5%;
+}
