@@ -6,16 +6,46 @@ img {
 	width:300px;
 	height:250px;
 }
-* {
+/* Everything with dark red background*/
+*, #warning {
+	background-color: #2b0606;
+	font-family: Fondamento, Georgia, serif;
+}
+/*Everything with light background*/
+/*.navbar, .body, table, tr, td {
+	background-color: #cccccc;
+}*/
+/*Darkest background*/
+.header, h1, .body, table, tr, td {
+	background-color: #111111;
+}
+/*Light background*/
+div>a, p, .big {
 	background-color: #cccccc;
 }
+/*Dark text*/
+div>a, p, .big {
+	color: #111111;
+}
+/*Dark red text*/
+h1, h2 {
+	color: #2b0606;
+}
+/*Light text*/
+h1, h2 {
+	color: #cccccc;
+}
+/*Grey text*/
+#current {
+	color: #5e5e5e;
+}
+
 body>div {
 	max-width: 100%;
 }
 .header {
-	background-color: #111111;
 	height: 15%;
-	width: 100%;
+	width: 98%;
 	display: block;
 	position: relative;
 	margin-top: 0;
@@ -25,15 +55,12 @@ body>div {
 	padding: 1%;
 }
 h1 {
-	color: #9e0000;
 	font-size: 40px;
 	font-weight: bold;
-	font-family: Fondamento, Georgia, serif;
 	padding-left: 5%;
 	display: inline;
 	position: relative;
 	top: 30%;
-	background-color: #111111;
 }
 .navbar {
 	float: none;
@@ -46,18 +73,74 @@ h1 {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	background-color: #111111;
 	border-radius: 10%;
 	border: 3px solid #9e0000;
+	z-index: 1;
+}
+#current {
+	//color: #cccccc;
 }
 div>a {
-	background-color: #111111;
-	color: #5e5e5e;
 	font-size: 1.2em;
-	font-family: Fondamento, Georgia, serif;
 	font-weight: bold;
 	border: 2px solid #9e0000;
 	border-radius: 15%;
 	padding: 0.5%;
+	text-decoration: none;
+}
+.body {
+	position: relative;
+	float: none;
+	width: 85%;
+	padding: 1%;
+	padding-left: 4.5%;
+	padding-right: 4.5%;
+	border-radius: 10%;
+	margin-top: -1%;
+	margin-left: auto;
+	margin-right: auto;
+}
+h2 {
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	background-color: inherit;
+}
+p {
+	font-size: 1em;
+	padding: 1%;
+}
+#warning {
+	color: #9e0000;
+	font-weight: bold;
+}
+.big {
+	display: block;
+	//height: 25%;
+	//width: 25%;
+	margin: auto;
+	font-size: 1.2em;
+	font-weight: bold;
+	border: 2px solid #9e0000;
+	border-radius: 15%;
+	//padding: 0.5%;
+	padding-top: 20%;
+	padding-bottom: 20%;
+	text-decoration: none;
+	text-align: center;
+}
+table {
+	width: 100%;
+	//table-layout: fixed;
+	//display: block;
+}
+td {
+	height: 25%;
+	width: 25%;
+	font-size: 1.2em;
+	font-weight: bold;
+	//border: 2px solid #9e0000;
+	//border-radius: 15%;
+	//padding: 0.5%;
 	text-decoration: none;
 }
