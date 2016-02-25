@@ -16,7 +16,7 @@ img {
 	background-color: #cccccc;
 }*/
 /*Darkest background*/
-.header, h1, .body, table, tr, td {
+.header, h1, .body, table, tr, td, .footer {
 	background-color: #111111;
 }
 /*Light background*/
@@ -32,7 +32,7 @@ h1, h2 {
 	color: #2b0606;
 }
 /*Light text*/
-h1, h2 {
+h1, h2, .footer {
 	color: #cccccc;
 }
 /*Grey text*/
@@ -143,4 +143,16 @@ td {
 	//border-radius: 15%;
 	//padding: 0.5%;
 	text-decoration: none;
+}
+.footer {
+	height: 15%;
+	width: 94%;
+	display: block;
+	position: relative;
+	margin-top: 2%;
+	border-top: 3px solid #9e0000;
+	border-top-left-radius: 10%;
+	border-top-right-radius: 10%;
+	padding: 1%;
+	padding-left: 5%;
 }
