@@ -101,6 +101,10 @@ div>a {
 	margin-left: auto;
 	margin-right: auto;
 }
+#artbody {
+	padding-bottom: 3%;
+	border-radius: 5%;
+}
 h2 {
 	text-align: center;
 	font-size: 1.5em;
@@ -151,6 +155,11 @@ td {
 .image {
 	max-width: 25%;
 	width: 20%;
+	height: auto;
+}
+#tall {
+	max-width: 33.3%;
+	width: 30%;
 	height: auto;
 }
 img {
