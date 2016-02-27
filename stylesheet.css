@@ -24,11 +24,11 @@ div>a, p, .big {
 	background-color: #cccccc;
 }
 /*Dark text*/
-div>a, p, .big {
+div>a, p, .big, a:visited {
 	color: #111111;
 }
 /*Dark red text*/
-h1, h2 {
+h1, h2, a:link, a:hover {
 	color: #2b0606;
 }
 /*Light text*/
@@ -77,16 +77,24 @@ h1 {
 	border: 3px solid #9e0000;
 	z-index: 1;
 }
-#current {
-	//color: #cccccc;
+a {
+	font-weight: bold;
+	text-decoration: none;
+	background-color: inherit;
 }
-div>a {
+a:hover {
+	font-size: larger;
+}
+div>a:active, div>a:link, div>a:visited {
 	font-size: 1.2em;
 	font-weight: bold;
 	border: 2px solid #9e0000;
 	border-radius: 15%;
 	padding: 0.5%;
 	text-decoration: none;
+}
+div>a:hover {
+	font-size: 1.4em;
 }
 .body {
 	position: relative;
@@ -124,14 +132,11 @@ p {
 }
 .big {
 	display: block;
-	//height: 25%;
-	//width: 25%;
 	margin: auto;
 	font-size: 1.2em;
 	font-weight: bold;
 	border: 2px solid #9e0000;
 	border-radius: 15%;
-	//padding: 0.5%;
 	padding-top: 20%;
 	padding-bottom: 20%;
 	text-decoration: none;
@@ -139,17 +144,12 @@ p {
 }
 table {
 	width: 100%;
-	//table-layout: fixed;
-	//display: block;
 }
 td {
 	height: 25%;
 	width: 25%;
 	font-size: 1.2em;
 	font-weight: bold;
-	//border: 2px solid #9e0000;
-	//border-radius: 15%;
-	//padding: 0.5%;
 	text-decoration: none;
 }
 .image {
