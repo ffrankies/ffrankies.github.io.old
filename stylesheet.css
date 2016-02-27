@@ -167,6 +167,13 @@ img {
 	width: 100%;
 	height: auto;
 }
+.tall {
+	height: 100%;
+	width: auto;
+	//max-width: 33.3%;
+	//width: 30%;
+	//height: auto;
+}
 .footer {
 	height: 15%;
 	width: 94%;
