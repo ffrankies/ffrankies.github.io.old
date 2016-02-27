@@ -16,7 +16,7 @@ html, body {
 	background-color: #cccccc;
 }*/
 /*Darkest background*/
-.header, h1, .body, table, tr, td, .footer {
+.header, h1, .body, table, tr, td, .footer, .right, #prolink {
 	background-color: #111111;
 }
 /*Light background*/
@@ -32,7 +32,7 @@ h1, h2, a:link, a:hover {
 	color: #2b0606;
 }
 /*Light text*/
-h1, h2, h3, .footer {
+h1, h2, h3, .footer, #prolink:link, #prolink:hover, #prolink:visited {
 	color: #cccccc;
 }
 /*Grey text*/
@@ -247,15 +247,16 @@ img {
 }
 .right {
 	text-align: right;
+	width: 50%;
+	display: inline;
+	float: right;
+	padding-right: 5%;
 }
-.right>a {
-	border: none;
+#prolink {
+	border: 0;
+	border-radius: 0;
 	background-color: inherit;
 	padding: 0;
 	margin: 0;
-}
-.logo {
-	height: 1em;
-	width: auto;
-	display: inline;
+	font-size: 1em;
 }
