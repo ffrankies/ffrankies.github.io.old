@@ -10,6 +10,7 @@ html, body {
 *, #warning {
 	background-color: #2b0606;
 	font-family: Fondamento, Georgia, serif;
+	font-size: 1em;
 }
 /*Everything with light background*/
 /*.navbar, .body, table, tr, td {
@@ -118,6 +119,8 @@ div>a:hover {
 }
 #resumebody {
 	text-align: center;
+	border-radius: 5%;
+	padding-bottom: 3%;
 }
 #resumebody>h1 {
 	padding: 0;
