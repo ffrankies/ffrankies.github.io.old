@@ -2,3 +2,20 @@
     padding-left: 30%;
     width: 50%;
 }
+span {
+    padding-left: 2em;
+    background-color: #cccccc;
+    color: #111111;
+}
+p::first-letter {
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+h3 {
+    border-top: 2px #cccccc solid;
+    border-left: 2px #cccccc solid;
+    border-right: 2px #cccccc solid;
+    margin-bottom: -1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
