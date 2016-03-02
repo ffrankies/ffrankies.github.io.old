@@ -12,15 +12,6 @@ table, tr, td, ul, li {
 	margin-right: 20%;
 	margin-bottom: 1%;
 }
-h3 {
-	text-align: center;
-	font-size: 1.3em;
-	font-weight: bold;
-	background-color: inherit;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
 .subh {
 	color: #5e5e5e;
 }

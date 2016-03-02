@@ -15,15 +15,15 @@ html, body {
 	background-color: #111111;
 }
 /*Light background*/
-.navbar>a, p {
+.navbar>a, p, .sidebar, .sidebar>ul, .sidebar>ul>li {
 	background-color: #cccccc;
 }
 /*Dark text*/
-.navbar>a, p, a:visited {
+.navbar>a, p, a:visited, #sidebar>li>a:link {
 	color: #111111;
 }
 /*Dark red text*/
-a:link, a:hover {
+a:link, a:hover, #sidebar>li>a:hover {
 	color: #2b0606;
 }
 /*Light text*/
@@ -31,7 +31,7 @@ h1, h2, h3, .footer, #prolink:link, #prolink:hover, #prolink:visited {
 	color: #cccccc;
 }
 /*Grey text*/
-#current {
+#current, #sidebar>li>a:visited {
 	color: #5e5e5e;
 }
 
@@ -70,8 +70,8 @@ h1 {
 	float: none;
 	position: relative;
 	display: block;
-	width: 65%;
-	height: 10%;
+	width: 75%;
+	height: 12%;
 	padding: 1%;
 	margin-top: -1%;
 	margin-left: auto;
@@ -100,6 +100,37 @@ a:hover {
 .navbar>a:hover {
     font-size: 1.5em;
 }
+.sidebar {
+	position: fixed;
+	width: 25%;
+	margin-top: 4%;
+	margin-left: 10%;
+	margin-bottom: 20%;
+	//height: 50%;
+	height: auto;
+	z-index: 2;
+	vertical-align: center;
+	font-size: 1.2em;
+	//border-radius: 10%;
+	border: 3px solid #9e0000;
+	padding: 1%;
+}
+.sidebar>ul {
+	margin-top: 0;
+	margin-bottom: 0;
+	list-style-type: none;
+	padding: 0;
+}
+.sidebar>ul>li {
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	border-top: 0.1px #5e5e5e solid;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+#first {
+	border-top: none;
+}
 .body {
 	position: relative;
 	float: none;
@@ -119,6 +150,15 @@ h2 {
 	font-weight: bold;
 	background-color: inherit;
 	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+h3 {
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+	background-color: inherit;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
