@@ -14,20 +14,6 @@ table, tr, td{
 .subh {
 	color: #5e5e5e;
 }
-a:hover {
-	font-size: larger;
-}
-/*div>a:active, div>a:link, div>a:visited {
-	font-size: 1.2em;
-	font-weight: bold;
-	border: 2px solid #9e0000;
-	border-radius: 15%;
-	padding: 0.5%;
-	text-decoration: none;
-}
-div>a:hover {
-	font-size: 1.4em;
-}*/
 .body>h1 {
 	padding: 0;
 	width: 60%;
@@ -60,10 +46,6 @@ h3 {
 	display: inline-block;
 	margin: 0;
 	padding: 0.5%;
-}
-#warning {
-	color: #9e0000;
-	font-weight: bold;
 }
 .big {
 	display: block;

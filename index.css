@@ -1,0 +1,33 @@
+/*Darkest background*/
+table, tr, td{
+	background-color: #111111;
+}
+/*Light background*/
+.big {
+	background-color: #cccccc;
+}
+/*Dark text*/
+.big {
+	color: #111111;
+}
+table {
+	width: 100%;
+}
+td {
+	height: 33%;
+	width: 33%;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-decoration: none;
+}
+.big {
+	display: block;
+	margin: auto;
+	font-size: 1.2em;
+	font-weight: bold;
+	border: 2px solid #9e0000;
+	padding-top: 20%;
+	padding-bottom: 20%;
+	text-decoration: none;
+	text-align: center;
+}

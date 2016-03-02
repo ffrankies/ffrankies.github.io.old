@@ -41,6 +41,10 @@ body {
 body>div {
 	max-width: 100%;
 }
+#warning {
+	color: #9e0000;
+	font-weight: bold;
+}
 
 .header {
 	height: 15%;
@@ -81,7 +85,7 @@ a {
 	text-decoration: none;
 	background-color: inherit;
 }
-.navbar>a:hover {
+a:hover {
 	font-size: larger;
 }
 .navbar>a:active, .navbar>a:link, .navbar>a:visited {
