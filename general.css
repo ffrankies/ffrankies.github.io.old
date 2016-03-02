@@ -2,34 +2,27 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
-/*img {
-	width:300px;
-	height:250px;
-}*/
+
 /* Everything with dark red background*/
 *, #warning {
 	background-color: #2b0606;
 	font-family: Fondamento, Georgia, serif;
 	font-size: 1em;
 }
-/*Everything with light background*/
-/*.navbar, .body, table, tr, td {
-	background-color: #cccccc;
-}*/
 /*Darkest background*/
-.header, h1, .body, table, tr, td, .footer, .right, #prolink {
+.header, h1, .body, .footer, .right, #prolink {
 	background-color: #111111;
 }
 /*Light background*/
-div>a, p, .big, .contact, .rlist, ul, li {
+.navbar>a, p {
 	background-color: #cccccc;
 }
 /*Dark text*/
-div>a, p, .big, a:visited {
+.navbar>a, p, a:visited {
 	color: #111111;
 }
 /*Dark red text*/
-h1, h2, a:link, a:hover {
+a:link, a:hover {
 	color: #2b0606;
 }
 /*Light text*/
@@ -37,16 +30,18 @@ h1, h2, h3, .footer, #prolink:link, #prolink:hover, #prolink:visited {
 	color: #cccccc;
 }
 /*Grey text*/
-#current, .subh {
+#current {
 	color: #5e5e5e;
 }
 
 body {
 	min-height: 85%;
 }
+
 body>div {
 	max-width: 100%;
 }
+
 .header {
 	height: 15%;
 	width: 98%;
@@ -86,10 +81,10 @@ a {
 	text-decoration: none;
 	background-color: inherit;
 }
-a:hover {
+.navbar>a:hover {
 	font-size: larger;
 }
-div>a:active, div>a:link, div>a:visited {
+.navbar>a:active, .navbar>a:link, .navbar>a:visited {
 	font-size: 1.2em;
 	font-weight: bold;
 	border: 2px solid #9e0000;
@@ -97,40 +92,21 @@ div>a:active, div>a:link, div>a:visited {
 	padding: 0.5%;
 	text-decoration: none;
 }
-div>a:hover {
-	font-size: 1.4em;
+.navbar>a:hover {
+    font-size: 1.5em;
 }
 .body {
 	position: relative;
 	float: none;
-	width: 85%;
-	padding: 1%;
-	padding-left: 4.5%;
-	padding-right: 4.5%;
-	padding-bottom: 2%;
-	border-radius: 10%;
+	width: 80%;
+	padding-top: 1%;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-bottom: 3%;
+	//border-radius: 10%;
 	margin-top: -1%;
 	margin-left: auto;
 	margin-right: auto;
-}
-#artbody {
-	padding-bottom: 3%;
-	border-radius: 5%;
-}
-#resumebody {
-	text-align: center;
-	border-radius: 5%;
-	padding-bottom: 3%;
-}
-#resumebody>h1 {
-	padding: 0;
-	width: 60%;
-	display: inline-block;
-	position: relative;
-	text-align: center;
-	margin-left: 20%;
-	margin-right: 20%;
-	margin-bottom: 1%;
 }
 h2 {
 	text-align: center;
@@ -141,80 +117,9 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 }
-h3 {
-	text-align: center;
-	font-size: 1.3em;
-	font-weight: bold;
-	background-color: inherit;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
-.subh {
-	font-size: 1.3em;
-}
 p {
 	font-size: 1em;
 	padding: 1%;
-}
-#resumebody>p {
-	padding: 1%;
-	margin: 0;
-	text-align: justify;
-}
-.contact {
-	width: 23%;
-	display: inline-block;
-	margin: 0;
-	padding: 0.5%;
-}
-#warning {
-	color: #9e0000;
-	font-weight: bold;
-}
-.big {
-	display: block;
-	margin: auto;
-	font-size: 1.2em;
-	font-weight: bold;
-	border: 2px solid #9e0000;
-	border-radius: 15%;
-	padding-top: 20%;
-	padding-bottom: 20%;
-	text-decoration: none;
-	text-align: center;
-}
-table {
-	width: 100%;
-}
-td {
-	height: 25%;
-	width: 25%;
-	font-size: 1.2em;
-	font-weight: bold;
-	text-decoration: none;
-}
-.image {
-	max-width: 25%;
-	width: 20%;
-	height: auto;
-}
-#tall {
-	max-width: 33.3%;
-	width: 30%;
-	height: auto;
-}
-img {
-	position: relative;
-	width: 100%;
-	height: auto;
-}
-.tall {
-	height: 100%;
-	width: auto;
-	//max-width: 33.3%;
-	//width: 30%;
-	//height: auto;
 }
 .footer {
 	height: 15%;
@@ -228,28 +133,6 @@ img {
 	padding: 1%;
 	padding-left: 5%;
 	bottom: 0;
-}
-.rlist {
-	width: 49%;
-	display: table-cell;
-	position: relative;
-	height: 40%;
-	text-align: left;
-	padding: 0;
-	//top: 0;
-}
-#container {
-	display: table;
-	width: 100%;
-	position: relative;
-}
-.list {
-	text-align: left;
-	padding-top: 1%;
-	padding-bottom: 1%;
-}
-li {
-	font-size: 1em;
 }
 .right {
 	text-align: right;
