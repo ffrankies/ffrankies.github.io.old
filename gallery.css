@@ -1,0 +1,15 @@
+table, tr, td {
+    backgrond-color: #111111;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+table {
+    width: 100%;
+}
+td {
+	max-width: 33.3%;
+	width: 30%;
+	height: auto;
+}
