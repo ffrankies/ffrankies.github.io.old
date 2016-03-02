@@ -8,6 +8,7 @@ html, body {
 	background-color: #2b0606;
 	font-family: Fondamento, Georgia, serif;
 	font-size: 1em;
+	color: #111111;
 }
 /*Darkest background*/
 .header, h1, .body, .footer, .right, #prolink {

@@ -1,0 +1,45 @@
+/*Darkest background*/
+table, tr, td, ul, li {
+	background-color: #cccccc;
+}
+.body>h1 {
+	padding: 0;
+	width: 60%;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 1%;
+}
+h3 {
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+	background-color: inherit;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.subh {
+	color: #5e5e5e;
+}
+table {
+	width: 100%;
+}
+td {
+	width: 50%;
+    height: auto;
+	font-size: 1em;
+	text-decoration: none;
+    vertical-align: top;
+    padding: 0;
+}
+.list {
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+ul {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
