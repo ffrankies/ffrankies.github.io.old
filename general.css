@@ -6,6 +6,10 @@ html, body {
 /* Everything with dark red background*/
 *, #warning {
 	background-color: #2b0606;
+	/*background: -webkit-linear-gradient(top, #2f0a0a , #2b0606, #270202); /* For Safari 5.1 to 6.0 */
+    /*background: -o-linear-gradient(bottom right, #2f0a0a , #2b0606, #270202); /* For Opera 11.1 to 12.0 */
+  	/*background: -moz-linear-gradient(bottom right, #2f0a0a , #2b0606, #270202); /* For Firefox 3.6 to 15 */
+  	/*background: linear-gradient(to bottom, #2f0a0a , #2b0606, #270202); /* Standard syntax */
 	font-family: Fondamento, Georgia, serif;
 	font-size: 1em;
 	color: #111111;
@@ -13,10 +17,18 @@ html, body {
 /*Darkest background*/
 .header, h1, .body, .footer, .right, #prolink {
 	background-color: #111111;
+	/*background: -webkit-linear-gradient(top, #222222 , #111111, #000000); /* For Safari 5.1 to 6.0 */
+  	/*background: -o-linear-gradient(bottom right, #222222 , #111111, #000000); /* For Opera 11.1 to 12.0 */
+  	/*background: -moz-linear-gradient(bottom right, #222222 , #111111, #000000); /* For Firefox 3.6 to 15 */
+  	/*background: linear-gradient(to bottom, #222222 , #111111, #000000); /* Standard syntax */
 }
 /*Light background*/
-.navbar>a, p, .sidebar, .sidebar>ul, .sidebar>ul>li {
+.navbar>a, p, .sidebar, .sidebar>ul, .sidebar>ul>li, td>a {
 	background-color: #cccccc;
+	background: -webkit-linear-gradient(left top, #eeeeee , #cccccc, #aaaaaa); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(bottom right, #eeeeee , #cccccc, #aaaaaa); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(bottom right, #eeeeee , #cccccc, #aaaaaa); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to bottom right, #eeeeee , #cccccc, #aaaaaa); /* Standard syntax */
 }
 /*Dark text*/
 .navbar>a, p, a:visited, #sidebar>li>a:link {
@@ -103,7 +115,7 @@ a:hover {
 .sidebar {
 	position: fixed;
 	width: 25%;
-	margin-top: 5%;
+	margin-top: 4%;
 	margin-left: 10%;
 	margin-bottom: 20%;
 	height: 51%;
@@ -155,6 +167,7 @@ h2 {
 	font-size: 1.5em;
 	font-weight: bold;
 	background-color: inherit;
+	background: inherit;
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
