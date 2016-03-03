@@ -23,7 +23,7 @@ html, body {
   	/*background: linear-gradient(to bottom, #222222 , #111111, #000000); /* Standard syntax */
 }
 /*Light background*/
-.navbar>a, p, .sidebar>ul, .sidebar>ul>li, td>a {
+.navbar>a, p, td>a {
 	background-color: #cccccc;
 	/*background: -webkit-linear-gradient(left top, #eeeeee , #cccccc, #aaaaaa); /* For Safari 5.1 to 6.0 */
   	/*background: -o-linear-gradient(bottom right, #eeeeee , #cccccc, #aaaaaa); /* For Opera 11.1 to 12.0 */
@@ -31,19 +31,19 @@ html, body {
   	/*background: linear-gradient(to bottom right, #eeeeee , #cccccc, #aaaaaa); /* Standard syntax */
 }
 /*Dark text*/
-.navbar>a, p, a:visited, #sidebar>li>a:link {
+.navbar>a, p, a:visited {
 	color: #111111;
 }
 /*Dark red text*/
-a:link, a:hover, #sidebar>li>a:hover {
+a:link, a:hover {
 	color: #2b0606;
 }
 /*Light text*/
-h1, h2, h3, .footer, #prolink:link, #prolink:hover, #prolink:visited {
+h1, h2, h3, .footer, #prolink:link, #prolink:hover, #prolink:visited, .sidebar>a {
 	color: #cccccc;
 }
 /*Grey text*/
-#current, #sidebar>li>a:visited {
+#current, .sidebar>a:visited {
 	color: #5e5e5e;
 }
 
@@ -69,6 +69,7 @@ body>div {
 	border-bottom-left-radius: 10%;
 	border-bottom-right-radius: 10%;
 	padding: 1%;
+	box-shadow: 0px 0px 10px #000000;
 }
 h1 {
 	font-size: 40px;
@@ -77,6 +78,10 @@ h1 {
 	display: inline;
 	position: relative;
 	top: 30%;
+}
+
+img {
+	box-shadow: 0px 0px 10px #000000;
 }
 .navbar {
 	float: none;
@@ -92,6 +97,7 @@ h1 {
 	border-radius: 10%;
 	border: 3px solid #9e0000;
 	z-index: 1;
+	box-shadow: 0px 0px 10px #000000;
 }
 a {
 	font-weight: bold;
@@ -108,6 +114,7 @@ a:hover {
 	border-radius: 15%;
 	padding: 0.5%;
 	text-decoration: none;
+	box-shadow: 0px 0px 10px #000000;
 }
 .navbar>a:hover {
     font-size: 1.5em;
@@ -126,35 +133,16 @@ a:hover {
 	border: 3px solid #9e0000;*/
 	padding: 1%;
 	padding-bottom: 2%;
+	box-shadow: 0px 0px 10px #000000;
 }
 .sidebar>a {
-	height: 10%;
+	height: 9%;
 	display: block;
 	width: 100%;
-	color: #cccccc;
 	vertical-align: middle;
-	/*padding-top: 1%;
-	padding-bottom: 1%;*/
+	padding-top: 1%;
+	/*padding-bottom: 1%;*/
 	border-top: 1px solid #5e5e5e;
-}
-.sidebar>ul {
-	position: relative;
-	height: 100%;
-	margin-top: 0;
-	margin-bottom: 0;
-	list-style-type: none;
-	padding: 0;
-	vertical-align: center;
-}
-.sidebar>ul>li {
-	min-height:9%;
-	max-height: 10%;
-	padding-top: 0.5%;
-	padding-bottom: 0.5%;
-	border-top: 0.1px #5e5e5e solid;
-	padding-left: 5%;
-	padding-right: 5%;
-	vertical-align: middle;
 }
 #first {
 	border-top: none;
@@ -171,6 +159,7 @@ a:hover {
 	margin-top: -1%;
 	margin-left: auto;
 	margin-right: auto;
+	box-shadow: 0px 0px 10px #000000;
 }
 h2 {
 	text-align: center;
@@ -194,6 +183,7 @@ h3 {
 p {
 	font-size: 1em;
 	padding: 1%;
+	box-shadow: 0px 0px 10px #000000;
 }
 .footer {
 	height: 15%;
@@ -207,6 +197,7 @@ p {
 	padding: 1%;
 	padding-left: 5%;
 	bottom: 0;
+	box-shadow: 0px 0px 10px #000000;
 }
 .right {
 	text-align: right;
