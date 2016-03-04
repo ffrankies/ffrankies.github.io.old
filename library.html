@@ -4,6 +4,14 @@
         <title>ffrankie's lab | library</title>
         <link type="text/css" rel="stylesheet" href="general.css" />
         <link type="text/css" rel="stylesheet" href="blog.css" />
+        <script src=
+            "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("p").load("stories/Deathbed.html");
+            });
+        </script>
     </head>
     <body>
         <div class="header">
@@ -33,10 +41,9 @@
             <!-- </ul> -->
         </div>
         <div class="body">
-            <h2>My Library</h2>
-            <h3><a name="s1"></a>Deathbed</h3>
-            <p>
-                <span>The</span> old man coughed, his small, gnarled body
+            <!--h3><a name="s1"></a>Deathbed</h3-->
+            <p id="content">
+                <!-- <span>The</span> old man coughed, his small, gnarled body
                 shaking from pain and age. His eyes gazed upwards, towards the
                 roof of the small hut in which he lay, but he was not seeing it.
                 His thoughts took his vision back into the depths of his memory,
@@ -128,7 +135,7 @@
                 <span>Gods</span>, he wished it were true. A single tear formed in his eye
                 and rolled down his cheek.
                 <br><br>
-                <span>And</span> then the darkness took him.
+                <span>And</span> then the darkness took him. -->
             </p>
         </div>
         <div class="footer">&copy 2016 Frank Wanye

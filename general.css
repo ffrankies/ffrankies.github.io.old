@@ -4,7 +4,7 @@ html, body {
 }
 
 /* Everything with dark red background*/
-*, #warning {
+*, #warning, .sidebar>a:hover {
 	background-color: #2b0606;
 	/*background: -webkit-linear-gradient(top, #2f0a0a , #2b0606, #270202); /* For Safari 5.1 to 6.0 */
     /*background: -o-linear-gradient(bottom right, #2f0a0a , #2b0606, #270202); /* For Opera 11.1 to 12.0 */
@@ -39,7 +39,8 @@ a:link, a:hover {
 	color: #2b0606;
 }
 /*Light text*/
-h1, h2, h3, .footer, #prolink:link, #prolink:hover, #prolink:visited, .sidebar>a {
+h1, h2, h3, .footer, #prolink:link, #prolink:hover, #prolink:visited, .sidebar>a
+, .sidebar>a:hover {
 	color: #cccccc;
 }
 /*Grey text*/
@@ -143,6 +144,9 @@ a:hover {
 	padding-top: 1%;
 	/*padding-bottom: 1%;*/
 	border-top: 1px solid #5e5e5e;
+}
+.sidebar>a:hover {
+	font-size: 1em;
 }
 #first {
 	border-top: none;
