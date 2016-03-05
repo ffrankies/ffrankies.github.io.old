@@ -8,7 +8,8 @@
         </script>
         <script>
             var ind = "stories/storyindex.txt";
-            var nf = "stories/notFound.html";
+            var nf = "notFound.html";
+            var start = "stories/";
         </script>
         <script src="loadContent.js"></script>
     </head>
@@ -30,18 +31,19 @@
         <div class="body">
             <!--h3><a name="s1"></a>Deathbed</h3-->
             <p id="content">
+                <span>
                 If you're seeing this paragraph, a vital script has probably
                 failed to load. Please try enabling javascript in your browser
                 and refreshing the page. If that doesn't work, please contact
                 me and I will try to fix the problem.
+                </span>
             </p>
             <script>
                 $("#content").load("stories/Deathbed.html");
             </script>
-
         </div>
         <script>
-            $(".body").css("min-height","1000px");
+            $(".body").css("min-height","700px");
         </script>
         <div class="footer">&copy 2016 Frank Wanye
             <div class="right">

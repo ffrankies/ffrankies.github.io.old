@@ -39,8 +39,9 @@ $(document).ready(function(){
     }
     getText(links);
     $(".sidebar>a").click(function() {
-        var txt = "stories/" + $(this).text();
+        var txt = start + $(this).text();
         txt += ".html";
+        txt = txt.replace(/ /g, "_");
         $("#content").load(txt, function(responseTxt, statusTxt, xhr){
             if(statusTxt == "error")
                 $("#content").load(nf);
