@@ -27,8 +27,16 @@ td {
 	font-size: 1.2em;
 	font-weight: bold;
 	border: 2px solid #9e0000;
-	padding-top: 20%;
-	padding-bottom: 20%;
+	padding-top: 25%;
+	padding-bottom: 25%;
 	text-decoration: none;
 	text-align: center;
+}
+#todolist {
+	background-image: url("images/projects/todolist.jpeg");
+	background-size: cover;
+}
+#acm {
+	background-image: url("images/projects/acm.jpeg");
+	background-size: cover;
 }
