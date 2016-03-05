@@ -155,6 +155,7 @@ a:hover {
 	position: relative;
 	float: none;
 	width: 80%;
+	min-height: 100%;
 	padding-top: 1%;
 	padding-left: 3%;
 	padding-right: 3%;
