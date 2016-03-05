@@ -148,7 +148,7 @@ a:hover {
 .sidebar>a:hover {
 	font-size: 1em;
 }
-#first {
+#first, .sidebar:first-child {
 	border-top: none;
 }
 .body {

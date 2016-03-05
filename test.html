@@ -7,9 +7,60 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
         </script>
         <script>
+            var allLinks;
+            var links;
             $(document).ready(function(){
                 $("p").load("stories/Deathbed.html");
-                $(".body>h2").hide();
+                function readTextFile(file)
+                {
+                    var rawFile = new XMLHttpRequest();
+                    rawFile.open("GET", file, false);
+                    rawFile.onreadystatechange = function ()
+                    {
+                        if(rawFile.readyState === 4)
+                        {
+                            if(rawFile.status === 200 || rawFile.status == 0)
+                            {
+                                var allText = rawFile.responseText;
+                                allLinks = allText;
+                            }
+                        }
+                    }
+                    rawFile.send(null);
+                }
+                readTextFile("stories/storyindex.txt");
+                $("p").click(function() {
+                      $("p").text(allLinks);
+                });
+                function changeToArray(stuff) {
+                    links = stuff.split('\n');
+                }
+                changeToArray(allLinks);
+                $("h1").click(function() {
+                    $("h1").text(links[0]);
+                });
+                //$(".sidebar").write("");
+                function getText(links) {
+                    for(i = 0; i < 10; ++i) {
+                    links[i] = $("<a></a>").text(links[i]);
+                    $(".sidebar").append(links[i]);
+                    }
+                }
+                getText(links);
+                $(".sidebar>a").click(function() {
+                    var txt = "stories/" + $(this).text();
+                    txt += ".html";
+                    $("#content").load(txt, function(responseTxt, statusTxt, xhr){
+                        if(statusTxt == "error")
+                            $("#content").load("stories/notFound.html");
+                    });
+                    //alert(txt);
+
+                });
+                $(".sidebar>a:first").css("border-top", "none");
+                //links[0] = $("<a></a>").text(links[0]);
+                //$(".sidebar").append(links[0]);
+                //alert(stuff);
             });
         </script>
     </head>
@@ -26,20 +77,34 @@
             <a href="gallery.html">GALLERY</a>
             <a href="library.html">LIBRARY</a>
         </div>
+        <div class="sidebar">
+            <!-- <ul id="sidebar"-->
+                <!-- <a href="#s9" id="first">Coming soon!</a>
+                <a href="#s8">Coming soon!</a>
+                <a href="#s7">Coming soon!</a>
+                <a href="#s6">Coming soon!</a>
+                <a href="#s5">Coming soon!</a>
+                <a href="#s4">Coming soon!</a>
+                <a href="#s3">Coming soon!</a>
+                <a href="#s2">Coming soon!</a>
+                <a href="#s1">Deathbed</a>
+                <a href="oldposts.html">Older stories</a> -->
+            <!-- </ul> -->
+        </div>
         <div class="body">
             <h2>Welcome!</h2>
-            <p>
+            <p id="content">
                 Welcome to ffrankies' laboratory! This is a personal website
                 where you'll find my resume, info about me and my projects (be
                 they programming projects or otherwise), my blog, and my
                 attempts at creating art and literature. To get started,
                 click on one of the links below - or on the navigation bar.
             </p>
-            <p id="warning">
+            <!-- <p id="warning">
                 This site is still in the design/creation stage, so expect some
                 stuff to look funky/not work properly. Everything will be fixed
                 in due time. No worries, eh?
-            </p>
+            </p> -->
             </table>
         </div>
         <div class="footer">&copy 2016 Frank Wanye

@@ -3,9 +3,8 @@
     width: 50%;
 }
 span {
-    padding-left: 2em;
-    background-color: #cccccc;
-    color: #111111;
+    font-weight: bold;
+    color: #9e0000;
 }
 p::first-letter {
     font-weight: bolder;
