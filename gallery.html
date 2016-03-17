@@ -4,6 +4,14 @@
         <title>ffrankie's lab | gallery</title>
         <link type="text/css" rel="stylesheet" href="general.css" />
         <link type="text/css" rel="stylesheet" href="gallery.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+        </script>
+        <script>
+            var ind = "images/imageindex.txt";
+            var nf = "notFound.html";
+            var start = "images/";
+        </script>
+        <script src="slideshow.js"></script>
     </head>
     <body>
         <div class="header">
@@ -26,6 +34,15 @@
                 bigger sizes and better resolutions on my
                 <a href="http://ffrankies.deviantart.com">DeviantArt page</a>.
             </p>
+            <p id="slides">
+                <span>
+                If you're seeing this paragraph, a vital script has probably
+                failed to load. Please try enabling javascript in your browser
+                and refreshing the page. If that doesn't work, please contact
+                me and I will try to fix the problem.
+                </span>
+            </p>
+            <script src="loadContent.js"></script>
             <img src="/images/charlotte.jpeg">
             <img src="/images/florence.jpg">
             <table>

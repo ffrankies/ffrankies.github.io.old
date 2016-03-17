@@ -13,3 +13,11 @@ td {
 	width: 30%;
 	height: auto;
 }
+#slides {
+    height: 600px;
+    text-align: center;
+}
+#slides>img {
+    height: 100%;
+    width: auto;
+}
