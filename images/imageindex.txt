@@ -1,7 +1,7 @@
 arya.jpeg
+bloom1.jpeg
 autumn.jpeg
 bedtime_story.jpeg
-bloom1.jpeg
 charlotte.jpeg
 demon.jpeg
 fillip.jpeg
@@ -16,7 +16,6 @@ julian1done.jpeg
 julian4.4.jpeg
 phoenix.jpeg
 possibilities.jpeg
-river.jpg
 self.jpeg
 splits1.jpeg
 splits2.jpeg

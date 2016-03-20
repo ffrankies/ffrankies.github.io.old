@@ -30,10 +30,11 @@ $(document).ready(function(){
         li[i] = '' + li[i];
     }
 
-
     var cw = $("#slides").width();
     var ch = $("#slides").height();
     $("#slide").css("max-width",cw);
+    $("#slide").css("max-height",ch);
+    $("#slide").css("vertical-align","center");
 
     //Changes images every 10000 milliseconds
     var k = 0;
@@ -52,11 +53,11 @@ $(document).ready(function(){
         $("#slide").width("auto");
         var w = $("#slide").width();
         var h = $("#slide").height();
-        if ( w > cw - 50) {
+        if ( w > cw ) {
             $("#slide").width(cw);
-            $("#slide").height("auto");
         }
-
+        $("#slide").css("max-width",cw);
+        $("#slide").css("max-height",ch);
     }, 10 * 1000);
 
 });
