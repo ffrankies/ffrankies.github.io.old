@@ -38,7 +38,30 @@ $(document).ready(function(){
 
     //Changes images every 10000 milliseconds
     var k = 0;
-    setInterval(function() {
+    var show = setInterval(function() {
+            nextImage();
+            // k++;
+            // if (k == len - 1)//because imageindex has an empty line at end
+            //     k = 0;
+            //
+            // str = start.concat(li[k]);
+            //
+            //
+            // $("#slides").html('<img id="slide" src="'+str+'"></img>');
+            // $("#slide").hide();
+            // $("#slide").fadeIn(7000);
+            // $("#slide").height(ch);
+            // $("#slide").width("auto");
+            // var w = $("#slide").width();
+            // var h = $("#slide").height();
+            // if ( w > cw ) {
+            //     $("#slide").width(cw);
+            // }
+            // $("#slide").css("max-width",cw);
+            // $("#slide").css("max-height",ch);
+        }, 10 * 1000);
+
+    function nextImage() {
         k++;
         if (k == len - 1)//because imageindex has an empty line at end
             k = 0;
@@ -58,6 +81,18 @@ $(document).ready(function(){
         }
         $("#slide").css("max-width",cw);
         $("#slide").css("max-height",ch);
-    }, 10 * 1000);
+    }
+
+    /*
+     * Loads next image when slideshow is clicked on
+     */
+    $("#slides").click(function() {
+        $("#slide").stop();
+        nextImage();
+        clearInterval(show);
+        show = setInterval(function() {
+            nextImage();
+        }, 10 * 1000);
+    });
 
 });
