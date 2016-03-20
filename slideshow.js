@@ -30,6 +30,11 @@ $(document).ready(function(){
         li[i] = '' + li[i];
     }
 
+
+    var cw = $("#slides").width();
+    var ch = $("#slides").height();
+    $("#slide").css("max-width",cw);
+
     //Changes images every 10000 milliseconds
     var k = 0;
     setInterval(function() {
@@ -39,9 +44,19 @@ $(document).ready(function(){
 
         str = start.concat(li[k]);
 
+
         $("#slides").html('<img id="slide" src="'+str+'"></img>');
         $("#slide").hide();
         $("#slide").fadeIn(7000);
+        $("#slide").height(ch);
+        $("#slide").width("auto");
+        var w = $("#slide").width();
+        var h = $("#slide").height();
+        if ( w > cw - 50) {
+            $("#slide").width(cw);
+            $("#slide").height("auto");
+        }
+
     }, 10 * 1000);
 
 });

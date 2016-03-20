@@ -16,6 +16,7 @@ td {
 #slides {
     height: 600px;
     text-align: center;
+    vertical-align: center;
 }
 #slides>img {
     height: 100%;
