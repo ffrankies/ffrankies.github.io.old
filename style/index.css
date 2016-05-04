@@ -141,13 +141,14 @@ p {
 }
 #right {
 	text-align: right;
-	width: 50%;
+	/*width: 50%;*/
 	position: absolute;
 	right: 0;
 	padding-right: 5%;
 	font-size: 1em;
 }
 #prolink {
+	display: inline-block;
 	border: 0;
 	border-radius: 0;
 	background-color: inherit;
