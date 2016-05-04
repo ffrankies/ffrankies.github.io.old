@@ -166,6 +166,12 @@ p {
 	animation-iteration-count: infinite;
 	animation-fill-mode: forwards;*/
 }
+.orbits:nth-child(6) {
+	display:none;
+}
+.orbits:last-child {
+	display:none;
+}
 
 @media screen and (min-width: 1000px) {
 	/*stuff for the animation*/
