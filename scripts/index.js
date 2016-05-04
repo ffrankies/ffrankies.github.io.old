@@ -40,11 +40,29 @@ $(document).ready(function(){
     //     "margin-top":0,
     //     "padding-top":0
     // });
-    var h1height = $("h1").height();
-    var headerHeight = $("#header").innerHeight();
-    var  pos = ( headerHeight - h1height ) / 2;
-    $("h1").css( "top", pos );
+    var reposition = function() {
+        var h1height = $("h1").height();
+        var headerHeight = $("#header").innerHeight();
+        var  pos = ( headerHeight - h1height ) / 2;
+        $("h1").css( "top", pos );
+    }
 
+    reposition();
+
+    $(window).on("orientationchange",function(){
+        if(window.orientation == 0) // Portrait
+        {
+            reposition();
+        }
+        else // Landscape
+        {
+            reposition();
+        }
+    });
+
+    $(window).on('resize', function(){
+      reposition();
+    });
 
     //hides links until needed
     $(".body").hide();
