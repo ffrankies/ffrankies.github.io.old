@@ -179,7 +179,7 @@ p {
 	background-color: black;
 }
 .orbits>div {
-	display: none;
+	--display: none;
 	position: absolute;
 	border-radius: 50%;
 	--border: 3px solid red;
