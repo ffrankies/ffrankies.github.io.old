@@ -30,16 +30,21 @@ $(document).ready(function(){
     }
 
     //Centers header text
-    var headerHeight = $("#header").height()*0.8;
-    var pos = $("#header").innerHeight() - headerHeight;
-    pos = pos / 2;
-    $("h1").css({
-        "font-size":headerHeight,
-        "position":"absolute",
-        "top":pos,
-        "margin-top":0,
-        "padding-top":0
-    });
+    // var headerHeight = $("#header").height()*0.8;
+    // var pos = $("#header").innerHeight() - headerHeight;
+    // pos = pos / 2;
+    // $("h1").css({
+    //     "font-size":headerHeight,
+    //     "position":"absolute",
+    //     "top":pos,
+    //     "margin-top":0,
+    //     "padding-top":0
+    // });
+    var h1height = $("h1").height();
+    var headerHeight = $("#header").innerHeight();
+    var  pos = ( headerHeight - h1height ) / 2;
+    $("h1").css( "top", pos );
+
 
     //hides links until needed
     $(".body").hide();
