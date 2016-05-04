@@ -44,9 +44,11 @@ $(document).ready(function(){
         pos = pos / 2;
         $("#name").css("top",pos);
 
+        //Vertically centers links in #right 
         var rightTextHeight = $("#right").innerHeight();
         pos = $("#footer").innerHeight() - rightTextHeight;
         pos = pos / 2;
+        pos = pos - ( $("#prolink").position().top ) / 2;
         $("#right").css("top",pos);
 
         //Vertically centers right links
