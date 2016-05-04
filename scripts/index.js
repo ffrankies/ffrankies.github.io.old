@@ -42,7 +42,18 @@ $(document).ready(function(){
         var footerTextHeight = $("#name").height();
         var pos = $("#footer").innerHeight() - footerTextHeight;
         pos = pos / 2;
-        $("#name, #right").css("top",pos);
+        $("#name").css("top",pos);
+
+        var rightTextHeight = $("#right").innerHeight();
+        pos = $("#footer").innerHeight() - rightTextHeight;
+        pos = pos / 2;
+        $("#right").css("top",pos);
+
+        //Vertically centers right links
+        // var footerTextHeight = $("#prolink").height();
+        // var pos = $("#right").innerHeight() - footerTextHeight;
+        // pos = pos / 2;
+        // $("#prolink").css("top",pos);
     }
 
     reposition();
