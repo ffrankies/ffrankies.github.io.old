@@ -62,7 +62,7 @@ body>div {
 	padding: 1%;
 	box-shadow: 0px 0px 10px #000000;
 }
-#first {
+#welcome {
 	position: absolute;
 	background-color: transparent;
 }
@@ -74,6 +74,11 @@ h1 {
 	margin-top: 0;
 	margin-bottom: 0;
 	font-size: 1em;
+}
+@media screen and (orientation: portrait) {
+	h1 {
+		font-size: 2em;
+	}
 }
 img {
 	box-shadow: 0px 0px 10px #000000;
@@ -130,12 +135,17 @@ p {
 	bottom: 0;
 	box-shadow: 0px 0px 10px #000000;
 }
+#name {
+	position: absolute;
+	font-size: 1em;
+}
 #right {
 	text-align: right;
 	width: 50%;
-	--display: inline;
+	position: absolute;
 	right: 0;
 	padding-right: 5%;
+	font-size: 1em;
 }
 #prolink {
 	border: 0;
@@ -237,7 +247,7 @@ p {
 		padding: 1%;
 		box-shadow: 0px 0px 10px #000000;
 	}
-	#first {
+	#welcome {
 		position: absolute;
 		background-color: transparent;
 	}
