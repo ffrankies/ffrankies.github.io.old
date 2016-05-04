@@ -51,7 +51,7 @@ $(document).ready(function(){
         pos = pos - ( $("#prolink").position().top ) / 2;
         $("#right").css("top",pos);
 
-        
+
         //Centers welcome message
         var height = $(window).height();
         var width = $(window).width();
@@ -89,6 +89,11 @@ $(document).ready(function(){
 
     //hides links until needed
     $(".body").hide();
+
+    $("#welcome").one('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function() {
+    //Your css
+        $('#welcome').remove();
+    });
 
     //centers footer content
     // var footerHeight = $("#footer").height()*0.5;
