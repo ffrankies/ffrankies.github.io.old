@@ -50,9 +50,6 @@ body>div {
 #header {
 	height: 15%;
 	width: 98%;
-	--vertical-align: center;
-	--text-align: center;
-	--display: block;
 	position: absolute;
 	top: 0;
 	margin-top: 0;
@@ -64,7 +61,11 @@ body>div {
 }
 #welcome {
 	position: absolute;
+	display: block;
 	background-color: transparent;
+	font-size: 3em;
+	text-align: center;
+	width: auto;
 }
 h1 {
 	font-weight: bold;
@@ -163,6 +164,9 @@ p {
 	}
 	#footer {
 		height: 7%;
+	}
+	#welcome {
+		font-size: 2em;
 	}
 }
 .orbits{

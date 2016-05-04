@@ -44,14 +44,26 @@ $(document).ready(function(){
         pos = pos / 2;
         $("#name").css("top",pos);
 
-        //Vertically centers links in #right 
+        //Vertically centers links in #right
         var rightTextHeight = $("#right").innerHeight();
         pos = $("#footer").innerHeight() - rightTextHeight;
         pos = pos / 2;
         pos = pos - ( $("#prolink").position().top ) / 2;
         $("#right").css("top",pos);
 
-        //Vertically centers right links
+        
+        //Centers welcome message
+        var height = $(window).height();
+        var width = $(window).width();
+        height = height - $("#welcome").height();
+        width = width - $("#welcome").width();
+        width = width / 2;
+        height = height / 2;
+
+        $("#welcome").css({
+            "top":height,
+            "left":width
+        });//Vertically centers right links
         // var footerTextHeight = $("#prolink").height();
         // var pos = $("#right").innerHeight() - footerTextHeight;
         // pos = pos / 2;
@@ -72,7 +84,7 @@ $(document).ready(function(){
     });
 
     $(window).on('resize', function(){
-      reposition();
+        reposition();
     });
 
     //hides links until needed
@@ -89,23 +101,5 @@ $(document).ready(function(){
     // });
     // $("#prolink").css("font-size",footerHeight);
 
-    //Centers welcome message
-    var texth = $(window).height();
-    texth = texth - $("#footer").outerHeight();
-    texth = texth - $("#header").outerHeight();
-    texth = texth*0.15;
-    $("#welcome").css("font-size",texth);
-
-    var height = $(window).height();
-    var width = $(window).width();
-    height = height - $("#welcome").height();
-    width = width - $("#welcome").width();
-    width = width / 2;
-    height = height / 2;
-
-    $("#welcome").css({
-        "top":height,
-        "left":width
-    });
 
 });
