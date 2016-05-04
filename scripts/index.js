@@ -40,6 +40,9 @@ $(document).ready(function(){
     //     "margin-top":0,
     //     "padding-top":0
     // });
+
+    alert($(window).width());
+
     var reposition = function() {
         var h1height = $("h1").height();
         var headerHeight = $("#header").innerHeight();
