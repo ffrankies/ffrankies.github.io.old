@@ -1,33 +1,55 @@
 $(document).ready(function(){
 
-    //Creates the 7 animated circles
-    for(i = 1; i < 7; ++i) {
-        //Circles increase in size
-        var circlesize = 200 * i;
-        //var fullHeight = $(document).height()*0.5;
-        var posh = $(document).height()*0.5 - ( circlesize / 2 );
-        var posw = $(document).width()*0.5 - ( ( circlesize + i * 10 ) / 2 );
+    var anim = function() {
+        $(".orbits").empty();
 
-        //alert(pos);
+        //Creates the 15 animated circles
+        var limit = 15;
 
-        //Circle color alternates
-        var color;
-        if ( i % 2 == 0 ) {
-            color = "#9e0000";
-        } else {
-            color = "black";
+        if($(window).width() < 800) {
+            limit = 9;
+        }
+        if($(window).width() < 480) {
+            limit = 0;
+        }
+        for(i = 0; i < limit; ++i) {
+            $(".orbits").append("<div></div>");
+            //Circles increase in size
+            var usableHeight = $(window).height() - $("#header").height() - $("#footer").height();
+            var circlesize = Math.random() * usableHeight * 0.7;
+            //var fullHeight = $(document).height()*0.5;
+            var posw = $(document).width()*0.5 - ( ( circlesize ) / 2 );
+            var translate = ( ( Math.random() * 0.5 ) + 0.5 ) * -100;
+            var x = $(document).width() * 0.75 * ( Math.random() - 0.5 );
+
+            //alert(pos);
+
+            //Circle color alternates
+            var color;
+            if( i % 4 == 0 ) {
+                color = "#FFE32D";
+            }
+            else if( i % 3 == 0 ) {
+                color = "#FF781D";
+            }
+            else if ( i % 2 == 0 ) {
+                color = "#9e0000";
+            } else {
+                color = "#cccccc";
+            }
+            $(".orbits").children().eq(i).css({
+                "width": circlesize,
+                "height": circlesize,
+                // "top": posh,
+                "left": posw + x,
+                "background": color,
+                "z-index": 0 - i,
+                "animation-delay": i * 100,
+                "transform": "translateY("+translate+"%)"
+            });
         }
 
-        $(".orbits").children().eq(i).css({
-            "width": circlesize + i * 10,
-            "height": circlesize,
-            "top": posh,
-            "left": posw,
-            "background": color,
-            "z-index": 0 - i,
-            "animation-delay": i * 100
-        });
-    }
+    };
 
     //alert($(window).width());
 
@@ -70,28 +92,30 @@ $(document).ready(function(){
         // $("#prolink").css("top",pos);
     }
 
-    reposition();
+    //reposition();
+
+    anim();
 
     $(window).on("orientationchange",function(){
         if(window.orientation == 0) // Portrait
         {
-            reposition();
+            anim();
         }
         else // Landscape
         {
-            reposition();
+            anim();
         }
     });
 
     $(window).on('resize', function(){
-        reposition();
+        anim();
     });
 
     //hides links until needed
     $(".body").hide();
 
     $("#welcome").one('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function() {
-    //Your css
+        //Your css
         $('#welcome').remove();
     });
 
