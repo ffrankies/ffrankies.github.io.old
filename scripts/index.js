@@ -6,10 +6,10 @@ $(document).ready(function(){
         //Creates the 15 animated circles
         var limit = 15;
 
-        if($(window).width() < 800) {
+        if($(window).width() < 800 || $(window).height() < 800) {
             limit = 9;
         }
-        if($(window).width() < 480) {
+        if($(window).width() < 480 || $(window).height() < 480) {
             limit = 0;
         }
         for(i = 0; i < limit; ++i) {
