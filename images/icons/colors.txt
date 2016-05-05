@@ -1,0 +1,8 @@
+head -    FFE32D	255, 227, 45 
+grad -    73E02F	115, 224, 47
+flask -   FF781D	255, 120, 29
+bubble -  69CCE0	105, 204, 224
+palette - FF291E	255, 41, 30
+A - 	  764DDD	118, 77, 221
+
+responsive design page: http://learn.shayhowe.com/advanced-html-css/responsive-web-design/

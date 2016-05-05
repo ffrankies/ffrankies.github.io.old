@@ -59,7 +59,7 @@ body>div {
 	padding: 1%;
 	box-shadow: 0px 0px 10px #000000;
 }
-@keyframes vanish1 {
+@keyframes vanish {
 	from {
 		transform: scaleX(1);
 		display: default;
@@ -76,7 +76,7 @@ body>div {
 	font-size: 3em;
 	text-align: center;
 	width: auto;
-	animation-name: vanish1;
+	animation-name: vanish;
 	animation-duration: 5s;
 	--animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	animation-iteration-count: 1;
@@ -234,7 +234,7 @@ p {
 		animation-fill-mode: forwards;
 	}
 
-	@keyframes vanish {
+	/*@keyframes vanish {
 		0% {
 			transform: scaleX(1);
 			color: white;
@@ -255,7 +255,7 @@ p {
 			transform: scaleX(0);
 			display: none;
 		}
-	}
+	}*/
 
 	@keyframes orbit {
 		from {
@@ -298,15 +298,15 @@ p {
 		padding: 1%;
 		box-shadow: 0px 0px 10px #000000;
 	}
-	#welcome {
+	/*#welcome {
 		position: absolute;
 		background-color: transparent;
-		animation-name: vanish;
+		/*animation-name: vanish;
 		animation-duration: 5s;
 		--animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 		animation-iteration-count: 1;
 		animation-fill-mode: forwards;
-	}
+	}*/
 	h1 {
 		position: absolute;
 		margin-top: 0;
