@@ -7,7 +7,7 @@ $(document).ready(function(){
         var limit = 15;
 
         if($(window).width() < 800) {
-            limit = 9;
+            limit = 8;
         }
         if($(window).width() < 480 || $(window).height() < 480) {
             limit = 0;
