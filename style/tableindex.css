@@ -59,7 +59,7 @@ h1 {
     text-decoration: none;
     font-style: bold;
 }
-.orbits {
+.container {
     align-items: center;
 	display: table-row;
 	justify-content: center;
@@ -67,21 +67,25 @@ h1 {
 	width: 100%;
 	height: 100%;
 	background-color: black;
-    z-index: -100;
 }
-.orbits>div {
-	/*display: none;*/
-	position: absolute;
-	border-radius: 50%;
-	box-shadow: 0 0 33px black;
+#bars {
+    position: relative;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    background-color: black;
+}
+#bars>div {
+    height: 2%;
+    width: 1%;
+    margin: 0% 0.5% 0% 0.5%;
+    position: absolute;
     top: 50%;
-    transform: translateY(-100%);
-	animation-name: orbit;
-	animation-duration: 20s;
-	animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	animation-iteration-count: infinite;
-	animation-fill-mode: forwards;
-    opacity: 0.5;
+    transform: translateY(-50%);
+    opacity: 0.7;
+    -webkit-animation-name: oscillate;
+    animation-name: oscillate;
+    animation-iteration-count: infinite;
 }
 @media screen and (min-width: 480px) {
     h1 {
@@ -103,6 +107,21 @@ h1 {
     #prolink {
         padding: 1% 1% 1% 1%;
     }
+    @keyframes oscillate {
+      0% {
+        transform: scaleY(0);
+        opacity: 0;
+      }
+      50% {
+        transform: scaleY(2);
+        transform-origin: 0 100%;
+        opacity: 1;
+      }
+      100% {
+        transform: scaleY(0);
+        opacity: 0;
+      }
+    }
 }
 @media screen and (min-width: 800px) {
     h1 {
@@ -116,26 +135,4 @@ h1 {
     #prolink {
         font-size: 1.5em;
     }
-    @keyframes orbit {
-		0% {
-			transform: rotate(0deg)  translateY(-100%);
-            transform-origin: 0 0;
-		}
-        25% {
-            transform: rotate(90deg)  translateY(-80%);
-            transform-origin: 0 -50%;
-        }
-        50% {
-            transform: rotate(180deg) translateY(-75%);
-            transform-origin: 0 -50%;
-        }
-        75% {
-            transform: rotate(270deg)  translateY(-100%);
-            transform-origin: 0 -60%;
-        }
-		100% {
-			transform: rotate(360deg) translateY(-100%);
-            transform-origin: 0 0;
-		}
-	}
 }
