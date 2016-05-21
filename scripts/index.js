@@ -27,55 +27,55 @@ $(document).ready(function(){
             var color = "#FFF68F";
             var dur = "12s";
             if( x == 2 || x == 12 || x == 22 || x == 32 || x == 42 ) {
-            color = "#c00000";
-            height = "38%";
-            dur = "15s";
+                color = "#c00000";
+                height = "38%";
+                dur = "15s";
             }
             if( x == 3 || x == 13 || x == 23 || x == 33 || x == 43 ) {
-            color = "#FF7F00";
-            height = "46%";
-            dur = "9s";
+                color = "#FF7F00";
+                height = "46%";
+                dur = "9s";
             }
             if( x == 4 || x == 14 || x == 24 || x == 34 || x == 44 ) {
-            color = "#AF4035";
-            height = "36%";
-            dur = "20s";
+                color = "#AF4035";
+                height = "36%";
+                dur = "20s";
             }
             if( x == 5 || x == 15 || x == 25 || x == 35 || x == 45 ) {
-            color = "#FF3300";
-            height = "24%";
-            dur = "17s";
+                color = "#FF3300";
+                height = "24%";
+                dur = "17s";
             }
             if( x == 6 || x == 16 || x == 26 || x == 36 || x == 46 ) {
-            color = "#EECBAD";
-            height = "22%";
-            dur = "10s";
+                color = "#EECBAD";
+                height = "22%";
+                dur = "10s";
             }
             if( x == 7 || x == 17 || x == 27 || x == 37 || x == 47 ) {
-            color = "#EE0000";
-            height = "34%";
-            dur = "22s";
+                color = "#EE0000";
+                height = "34%";
+                dur = "22s";
             }
             if( x == 8 || x == 18 || x == 28 || x == 38 || x == 48 ) {
-            color = "#FFEC8B";
-            height = "47%";
-            dur = "11s";
+                color = "#FFEC8B";
+                height = "47%";
+                dur = "11s";
             }
             if( x == 9 || x == 19 || x == 29 || x == 39 || x == 49 ) {
-            color = "#B22222";
-            height = "35%";
-            dur = "18s";
+                color = "#B22222";
+                height = "35%";
+                dur = "18s";
             }
             if( x % 10 == 0 ) {
-            color = "#FFD39B";
-            height = "24%";
-            dur = "7s";
+                color = "#FFD39B";
+                height = "24%";
+                dur = "7s";
             }
             $("#bars").children().eq(i).css({
-            "height": height,
-            "left": i*2 + "%",
-            "background-color": color,
-            "animation-duration": dur
+                "height": height,
+                "left": i*2 + "%",
+                "background-color": color,
+                "animation-duration": dur
             });
 
             if($(window).width() < 800) {
@@ -89,6 +89,26 @@ $(document).ready(function(){
         }
     };
 
+    var resize = function() {
+        //alert($(".item").css("min-height"));
+        if($(".item").css("min-height") == "40px") {
+            var containerHeight = $(".container").height();
+            containerHeight = 0.93 * containerHeight;
+            containerHeight = containerHeight / 6;
+            $(".item").css("height",containerHeight);
+            // alert("hello");
+        }
+        else
+            if($(".item").css("min-height") == "60px") {
+                var containerHeight = $(".container").height();
+                containerHeight = 0.93 * containerHeight;
+                containerHeight = containerHeight / 3;
+                $(".item").css("height",containerHeight);
+            }
+        // $(".item>div").css("margin-top","50%");
+    };
+
+        //alert($(document).width() + " " + $(window).width());
     //alert($(window).width());
 
     var reposition = function() {
@@ -133,29 +153,33 @@ $(document).ready(function(){
     //reposition();
 
     anim();
+    resize();
 
     $(window).on("orientationchange",function(){
         if(window.orientation == 0) // Portrait
         {
             anim();
+            resize();
         }
         else // Landscape
         {
             anim();
+            resize();
         }
     });
 
     $(window).on('resize', function(){
         anim();
+        resize();
     });
 
     //hides links until needed
     $(".body").hide();
 
-    $("#welcome").one('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function() {
-        //Your css
-        $('#welcome').remove();
-    });
+    // $("#welcome").one('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function() {
+    //     //Your css
+    //     $('#welcome').remove();
+    // });
 
     //centers footer content
     // var footerHeight = $("#footer").height()*0.5;
