@@ -14,9 +14,6 @@ html, body {
 	font-size: 1em;
 	color: #111111;
 }
-b {
-	background-color: none;
-}
 /*Darkest background*/
 .header, h1, .body, .footer, .right, #prolink, .sidebar {
 	background-color: #111111;
@@ -34,7 +31,7 @@ b {
   	/*background: linear-gradient(to bottom right, #eeeeee , #cccccc, #aaaaaa); /* Standard syntax */
 }
 /*Dark text*/
-.navbar>a, p, a:visited, b {
+.navbar>a, p, a:visited {
 	color: #111111;
 }
 /*Dark red text*/
