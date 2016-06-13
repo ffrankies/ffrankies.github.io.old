@@ -1,53 +1,61 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>ffrankie's lab | homepage</title>
-        <link type="text/css" rel="stylesheet" href="general.css" />
-        <link type="text/css" rel="stylesheet" href="index.css" />
-    </head>
-    <body>
-        <div class="header">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ffrankies' laboratory is the personal
+        website of Frank Wanye - aspiring applications developer and dabbler
+        in art and writing">
+    <meta name="keywords" content="ffrankies,laboratory,coding,programming,
+        art,writing,re&769sume&769,home">
+    <meta name="author" content="Frank Wanye">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Separate metas from header stuff-->
+    <title>ffrankies' lab | homepage</title>
+    <link type="text/css" rel="stylesheet" href="style/anim/index.css" />
+    <link type="text/css" rel="stylesheet" href="style/phone/phoneindex.css" />
+    <link type="text/css" rel="stylesheet" href="style/tablet/tabletindex.css" />
+    <link type="text/css" rel="stylesheet" href="style/laptop/index.css" />
+    <!-- <script src="scripts/index.js"></script>  -->
+</head>
+<body>
+    <div id="headerrow">
+        <div id="header">
             <h1>ffrankies' laboratory</h1>
+            <h2>HOME</h2>
         </div>
-        <div class="navbar">
-            <a href="index.html" id="current">HOME</a>
-            <a href="about_me.html">ABOUT ME</a>
-            <a href="resume.html">RE&#769SUME&#769</a>
-            <a href="blog.html">BLOG</a>
-            <a href="projects.html">PROJECTS</a>
-            <a href="gallery.html">GALLERY</a>
-            <a href="library.html">LIBRARY</a>
-        </div>
-        <div class="body">
-            <h2>Welcome!</h2>
-            <p>
-                Welcome to ffrankies' laboratory! This is a personal website
-                where you'll find my resume, info about me and my projects (be
-                they programming projects or otherwise), my blog, and my
-                attempts at creating art and literature. To get started,
-                click on one of the links below - or on the navigation bar.
-            </p>
-            <p id="warning">
-                This site is still in the design/creation stage, so expect some
-                stuff to look funky/not work properly. Everything will be fixed
-                in due time. No worries, eh? <a href="newindex.html">NEW LANDING
-                PAGE - IN DEVELOPMENT</a>
-            </p>
-            <table>
-                <tr>
-                    <td><a href="about_me.html" class="big">ABOUT ME</a></td>
-                    <td><a href="resume.html" class="big">RE&#769SUME&#769</a></td>
-                    <td><a href="blog.html" class="big">BLOG</a></td>
-                </tr>
-                <tr>
-                    <td><a href="projects.html" class="big">PROJECTS</a></td>
-                    <td><a href="gallery.html" class="big">GALLERY</a></td>
-                    <td><a href="library.html" class="big">LIBRARY</a></td>
-                </tr>
-            </table>
-        </div>
-        <div class="footer">&copy 2016 Frank Wanye
-            <div class="right">
+    </div>
+
+    <!-- Menu div -->
+    <div class="container">
+        <div id="menu">
+                    <a href="about_me.html" class="item head">
+                        <div>ABOUT ME</div>
+                    </a>
+                    <a href="resume.html" class="item grad">
+                        <div>RE&#769SUME&#769</div>
+                    </a>
+                    <a href="blog.html" class="item bubble">
+                        <div>BLOG</div>
+                    </a>
+                    <a href="projects.html" class="item A">
+                        <div>PROJECTS</div>
+                    </a>
+                    <a href="gallery.html" class="item palette">
+                        <div>GALLERY</div>
+                    </a>
+                    <a href="library.html" class="item flask">
+                        <div>LIBRARY</div>
+                    </a>
+        </div> <!--end menu-->
+    </div> <!--end container-->
+
+    <!-- <h2 id="welcome">
+        Welcome to <br> ffrankies' <br> laboratory!
+    </h2> -->
+
+    <div id="footerrow">
+        <div id="footer"><span id="name">&copy 2016 Frank Wanye</span>
+            <div id="right">
                 <a id="prolink" href="https://github.com/ffrankies">
                     GitHub &trade;
                 </a> &#8195
@@ -56,5 +64,7 @@
                 </a>
             </div>
         </div>
-    </body>
+    </div>
+
+</body>
 </html>

@@ -1,4 +1,4 @@
-@media screen and (min-width: 930px) {
+@media screen and (min-width: 480px) {
     .container {
         background-color: #2b0606;
         /*background-color: rgba(255,227,45,0.7);*/
@@ -63,14 +63,14 @@
         border: 2px solid white;
         margin: 1.5% 2.5% 1.5% 2.5%;
         padding: 3% 0 3% 0;
-        width: 44%;
-        min-height: 60px;
-        font-size: 2em;
+        width: 43.9%;
+        min-height: 80px;
+        font-size: 1.5em;
     }
     .item div {
         text-shadow: -2px -2px 2px black, 1px 1px 1px #242424;
         width: 100%;
-        padding-right: 20%;
+        padding-right: 2%;
         text-align: right;
         animation-name: wiggle2;
         animation-duration: 30s;
@@ -172,5 +172,14 @@
     #wrapper {
         height: 100%;
         padding: 0.5% 0 0.5% 0;
+    }
+}
+@media screen and (min-width: 930px) {
+    .item {
+        font-size: 2em;
+        width: 44%;
+    }
+    .item div {
+        padding-right: 20%;
     }
 }
