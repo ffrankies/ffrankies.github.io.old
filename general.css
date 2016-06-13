@@ -23,7 +23,7 @@ html, body {
   	/*background: linear-gradient(to bottom, #222222 , #111111, #000000); /* Standard syntax */
 }
 /*Light background*/
-.navbar>a, p, td>a, sup {
+.navbar>a, p, td>a, sup, strong {
 	background-color: #cccccc;
 	/*background: -webkit-linear-gradient(left top, #eeeeee , #cccccc, #aaaaaa); /* For Safari 5.1 to 6.0 */
   	/*background: -o-linear-gradient(bottom right, #eeeeee , #cccccc, #aaaaaa); /* For Opera 11.1 to 12.0 */
