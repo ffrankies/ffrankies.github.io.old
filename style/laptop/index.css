@@ -1,0 +1,93 @@
+@media screen and (min-width: 1319px) {
+    h1 {
+        font-size: 3.5em;
+        /*margin-left: 5%;*/
+        margin: 1.5% 0 0.25% 5%;
+    }
+    h2 {
+        font-size: 2.5em;
+        margin: 0 0 0.5% 5%;
+    }
+    #name {
+        font-size: 1.5em;
+    }
+    #prolink {
+        font-size: 1.5em;
+    }
+    .item {
+        width: 27.9%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background-position: center;
+        /*background-color: rgba(17,17,17,0.5);*/
+    }
+    .item div {
+        position: absolute;
+        font-size: 1.7em;
+        text-align: center;
+        padding: 0;
+        transform: translate(-50%, -50%);
+        /*opacity: 1;*/
+        width: 75%;
+        text-indent: 10px;
+        background-color: rgba(17,17,17,0.5);
+        border-width: 5px;
+        border-top-style: double;
+        border-bottom-style: double;
+        padding-top: 2%;
+    }
+    .grad div {
+        padding-top: 2%;
+    }
+    /*.head {
+        color: #553603;
+    }
+    .grad {
+        color: #003003;
+    }
+    .bubble {
+        color: #021130;
+    }
+    .A {
+        color: #210344;
+    }
+    .palette {
+        color: #330403;
+    }
+    .flask {
+        color: #332403;
+    }*/
+    @keyframes wiggle2 {
+        0% {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        2% {
+            transform: translate(-50%, -50%) scale(1.3);
+        }
+        4% {
+            transform: translate(-50%, -50%) scale(0.8);
+        }
+        6% {
+            transform: translate(-50%, -50%) scale(1.3);
+        }
+        8% {
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+    @-webkit-keyframes wiggle2 {
+        0% {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        2% {
+            transform: translate(-50%, -50%) scale(1.3);
+        }
+        4% {
+            transform: translate(-50%, -50%) scale(0.8);
+        }
+        6% {
+            transform: translate(-50%, -50%) scale(1.3);
+        }
+        8% {
+            transform: translate(-50%, -50%) scale(1);
+        }
+}

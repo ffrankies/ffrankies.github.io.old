@@ -1,0 +1,176 @@
+@media screen and (min-width: 930px) {
+    .container {
+        background-color: #2b0606;
+        /*background-color: rgba(255,227,45,0.7);*/
+        /*-webkit-animation-name: colors;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-duration: 100s;
+        animation-name: colors;
+        animation-iteration-count: infinite;
+        animation-duration: 100s;*/
+    }
+    h1 {
+        text-align: left;
+        font-size: 2em;
+        margin: 1% 0 0.5% 3%;
+        -webkit-animation-name: space;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-duration: 40s;
+        animation-name: space;
+        animation-iteration-count: infinite;
+        animation-duration: 40s;
+    }
+    h1:hover {
+        color: #5a5a5a;
+    }
+    h2 {
+        margin-top: 0;
+        margin-left: 3%;
+        display: inline-block;
+        animation-name: wiggle;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: wiggle;
+        -webkit-animation-duration: 30s;
+        -webkit-animation-iteration-count: infinite;
+    }
+    h2:hover {
+        text-shadow: 0px 0px 10px #cccccc;
+        color: #111111;
+    }
+    #name {
+        display: table-cell;
+        border: none;
+        text-align: left;
+        padding: 1% 1% 1% 4%;
+    }
+    #right {
+        display: table-cell;
+        border: none;
+        text-align: right;
+        padding: 0 4% 0 0;
+    }
+    #prolink {
+        padding: 1% 1% 1% 1%;
+    }
+    /*Makes menu items show icon originally, text when moused over*/
+    .item {
+        /*opacity: 1;*/
+        /*background-color: rgba(255,255,255,0.75);*/
+        background-color: #111111;
+        background-position: left;
+        display: inline-block;
+        border: 2px solid white;
+        margin: 1.5% 2.5% 1.5% 2.5%;
+        padding: 3% 0 3% 0;
+        width: 44%;
+        min-height: 60px;
+        font-size: 2em;
+    }
+    .item div {
+        text-shadow: -2px -2px 2px black, 1px 1px 1px #242424;
+        width: 100%;
+        padding-right: 20%;
+        text-align: right;
+        animation-name: wiggle2;
+        animation-duration: 30s;
+        transform: translate(-60%, -50%);
+        animation-iteration-count: infinite;
+        -webkit-animation-name: wiggle2;
+        -webkit-animation-duration: 30s;
+        -webkit-animation-iteration-count: infinite;
+    }
+    .item:hover {
+        transform: scale(1.05);
+        /*border-width: 5px;*/
+    }
+    .head {
+        background-image: url("../../images/icons/head_small.png");
+        border-color: #FFE32D;
+        color: #FFE32D;
+    }
+    /*.head:hover {
+        box-shadow: 10px 10px 20px #FFE32D;
+        /*box-shadow: 0px 0px 20px #111111;
+    }*/
+    .head div {
+        animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+    }
+    .grad {
+        background-image: url("../../images/icons/grad_small.png");
+        border-color: #73E02F;
+        color: #73E02F;
+    }
+    /*.grad:hover {
+        box-shadow: 10px 10px 20px #73E02F;
+    }*/
+    .grad div {
+        animation-delay: 5s;
+        -webkit-animation-delay: 5s;
+    }
+    .bubble {
+        background-image: url("../../images/icons/bubble_small.png");
+        border-color: #69CCE0;
+        color: #69CCE0;
+    }
+    /*.bubble:hover {
+        box-shadow: 10px 10px 20px #69CCE0;
+    }*/
+    .bubble div {
+        animation-delay: 10s;
+        -webkit-animation-delay: 10s;
+    }
+    .A {
+        background-image: url("../../images/icons/A_small.png");
+        border-color: #764DDD;
+        color: #764DDD;
+    }
+    /*.A:hover {
+        box-shadow: 10px 10px 20px #764DDD;
+    }*/
+    .A div {
+        animation-delay: 15s;
+        -webkit-animation-delay: 15s;
+    }
+    .palette {
+        background-image: url("../../images/icons/palette_small.png");
+        border-color: #FF291E;
+        color: #FF291E;
+    }
+    /*.palette:hover {
+        box-shadow: 10px 10px 20px #FF291E;
+    }*/
+    .palette div {
+        animation-delay: 20s;
+        -webkit-animation-delay: 20s;
+    }
+    .flask {
+        background-image: url("../../images/icons/flask_small.png");
+        border-color: #FF781D;
+        color: #FF781D;
+        animation-delay: 20s;
+        -webkit-animation-delay: 20s;
+    }
+    /*.flask:hover {
+        box-shadow: 10px 10px 20px #FF781D;
+    }*/
+    .flask div {
+        animation-delay: 25s;
+        -webkit-animation-delay: 25s;
+    }
+    /*Makes animation visible*/
+    #bars {
+        position: absolute;
+        display: block;
+    }
+    #menu {
+        display: block;
+        height: 100%;
+        /*transform: translateY(-100%);*/
+    }
+    #wrapper {
+        height: 100%;
+        padding: 0.5% 0 0.5% 0;
+    }
+}
