@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Acme);
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,700&subset=latin,latin-ext);
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Yanone Kaffeesatz','Acme', sans-serif;
+}
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+body {
+    display: table;
+    width: 100%;
+    height: 100%;
+    /*background-color: #FFE205;*/
+    background-color: rgba(255,232,5,0.8);
+}
+/******************************************************************************
+ Styling the header
+******************************************************************************/
+#headerrow {
+    font-weight: bold;
+    display: table-row;
+    width: 100%;
+    background-color: #453F16;
+}
+#header {
+    background-color: inherit;
+    width: 100%;
+    border-bottom: 3px solid #7F7116;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 1.6em;
+    margin: 2% auto 1% auto;
+    color: #FFE205;
+    letter-spacing: 4px;
+    /*text-shadow: -4px -4px 4px black, 3px 3px 3px #242424;*/
+    transition: color 2s;
+    text-align: center;
+}
+h2 {
+    font-size: 1.3em;
+    text-align: center;
+    margin: 0.5% 0 0.5% 0%;
+    color: #FFE205;
+    /*text-shadow: -2px -2px 2px black, 1px 1px 1px #242424;*/
+    transition: text-shadow 2s, color 1s;
+}
+/******************************************************************************
+ Styling the navigation bar
+******************************************************************************/
+#navbar {
+    display: table-row;
+    width: 100%;
+    background-color: #453F16;
+    margin-bottom: 10%;
+    text-align: center;
+}
+#links {
+    border-bottom: 2px solid #7F7116;
+    width: 100%;
+}
+#links a, #links a:link, #links a:visited, #links a:hover, #links a:active {
+    margin: 0.1%;
+    color: #7F7116;
+}
+.nav {
+    white-space: nowrap;
+    display: inline-block;
+    margin: 0;
+    font-size: 0.9em;
+    height: 100%;
+    padding: 2% 1% 2% 1%;
+    border-right: 1px solid #7F7116;
+    border-collapse: collapse;
+    font-weight: bold;
+}
+#current {
+    color: #FFE205;
+}
+#last {
+    border-right: none;
+}
+/******************************************************************************
+ Styling the body/container
+******************************************************************************/
+#container {
+    width: 100%;
+}
+#container a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #453F16;
+}
+h3 {
+    position: absolute;
+    background-color: #453F16;
+    color: #FFE205;
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    text-align: center;
+    letter-spacing: 2px;
+    z-index: 10;
+}
+p {
+    width: 80%;
+    margin: 0% 5% 0% 5%;
+    background-color: #FFEB52;
+    padding: 15% 5% 5% 5%;
+    color: #453F16;
+    z-index: -5;
+}
+/******************************************************************************
+ Styling the footer
+******************************************************************************/
+#footerrow {
+    display: table-row;
+    width: 100%;
+    background-color: #453F16;
+}
+#footer {
+    display: table;
+    width: 100%;
+    background-color: inherit;
+    border-top: 2px solid #7F7116;
+}
+#name {
+    display: block;
+    font-size: 1em;
+    margin: 1% 0 1% 0;
+    text-align: center;
+    color: #FFE205;
+}
+#right {
+    display: block;
+    text-align: center;
+    margin: 1% 0 1% 0;
+}
+#prolink {
+    font-size: 1em;
+    color: #FFE205;
+    text-decoration: none;
+    font-style: bold;
+}
