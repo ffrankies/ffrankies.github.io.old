@@ -20,6 +20,7 @@ body {
 #91B166 - greenish
 #FFE205 - yellow
 #E49400 - deep yellow
+#DD5200 - orange
 */
 /******************************************************************************
  Styling the header
@@ -39,7 +40,7 @@ a {
 }
 h1 {
     font-size: 3em;
-    margin: 2% 0 2% 5%;
+    padding: 2% 0 2% 5%;
     color: #E49400;
     letter-spacing: 4px;
     text-shadow: 0px 2px 2px #B96900;
@@ -94,6 +95,7 @@ h2 {
 #91B166 - greenish
 #FFE205 - yellow
 #E49400 - deep yellow
+#DD5200 - orange
 */
 /******************************************************************************
  Styling the body/container
@@ -138,6 +140,7 @@ p {
     display: table-row;
     width: 100%;
     background-color: #E49400;
+    font-size: 1em;
 }
 #footer {
     display: table;
@@ -146,7 +149,6 @@ p {
 }
 #name {
     display: block;
-    font-size: 1em;
     margin: 1% 0 1% 0;
     text-align: center;
     color: #FFE205;
@@ -158,7 +160,6 @@ p {
     margin: 1% 0 1% 0;
 }
 #prolink {
-    font-size: 1em;
     color: #FFE205;
     text-shadow: 0px 2px 2px #557531;
     text-decoration: none;

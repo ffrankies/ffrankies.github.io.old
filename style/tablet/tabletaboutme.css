@@ -1,0 +1,65 @@
+@media screen and (min-width: 480px) {
+    /*
+    #EFE38A - beige
+    #91B166 - greenish
+    #FFE205 - yellow
+    #E49400 - deep yellow
+    #DD5200 - orange
+    */
+    h1 {
+        font-size: 3.5em;
+        -webkit-animation-name: space;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-duration: 40s;
+        animation-name: space;
+        animation-iteration-count: infinite;
+        animation-duration: 40s;
+        transition: color 2s, text-shadow 2s;
+    }
+    h1:hover {
+        color: #DD5200;
+        text-shadow: 0px 0px 0px #DD5200;
+    }
+    h1:active {
+        background-color: #E49400;
+    }
+    #navbar {
+        text-align: right;
+    }
+    .nav {
+        font-size: 1.5em;
+        min-width: 13%;
+        text-align: center;
+        /*transition: background-color 2s;*/
+        transition: box-shadow 1.5s linear;
+    }
+    .nav:hover {
+        /*background-color: #DD5200;*/
+        box-shadow: -1px -2px 3px #742400;
+    }
+    h3 {
+        padding-left: 15%;
+        text-align: left;
+        font-size: 2em;
+    }
+    #h3text {
+        text-align: center;
+        width: 20%;
+        animation-name: wiggle;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: wiggle;
+        -webkit-animation-duration: 30s;
+        -webkit-animation-iteration-count: infinite;
+    }
+    #footerrow {
+        font-size: 1.1em;
+    }
+    #prolink:hover {
+        color: #DD5200;
+    }
+    #prolink:active {
+        color: #FFE205;
+        text-shadow: 0px 0px 3px #DD5200;
+    }
+}
