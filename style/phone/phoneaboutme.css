@@ -13,9 +13,14 @@ body {
     display: table;
     width: 100%;
     height: 100%;
-    /*background-color: #FFE205;*/
-    background-color: rgba(255,232,5,0.8);
+    background-color: #FFE205;
 }
+/*
+#EFE38A - beige
+#91B166 - greenish
+#FFE205 - yellow
+#E49400 - deep yellow
+*/
 /******************************************************************************
  Styling the header
 ******************************************************************************/
@@ -23,68 +28,73 @@ body {
     font-weight: bold;
     display: table-row;
     width: 100%;
-    background-color: #453F16;
+    background-color: #FFE205;
 }
 #header {
     background-color: inherit;
     width: 100%;
-    border-bottom: 3px solid #7F7116;
 }
 a {
     text-decoration: none;
 }
 h1 {
-    font-size: 1.6em;
-    margin: 2% auto 1% auto;
-    color: #FFE205;
+    font-size: 3em;
+    margin: 2% 0 2% 5%;
+    color: #E49400;
     letter-spacing: 4px;
-    /*text-shadow: -4px -4px 4px black, 3px 3px 3px #242424;*/
+    text-shadow: 0px 2px 2px #B96900;
     transition: color 2s;
-    text-align: center;
 }
 h2 {
     font-size: 1.3em;
     text-align: center;
     margin: 0.5% 0 0.5% 0%;
-    color: #FFE205;
-    /*text-shadow: -2px -2px 2px black, 1px 1px 1px #242424;*/
     transition: text-shadow 2s, color 1s;
 }
+/*
+#EFE38A - beige
+#91B166 - greenish
+#FFE205 - yellow
+#E49400 - deep yellow
+*/
 /******************************************************************************
  Styling the navigation bar
 ******************************************************************************/
 #navbar {
     display: table-row;
     width: 100%;
-    background-color: #453F16;
+    background-color: #E49400;
     margin-bottom: 10%;
     text-align: center;
 }
 #links {
-    border-bottom: 2px solid #7F7116;
     width: 100%;
 }
 #links a, #links a:link, #links a:visited, #links a:hover, #links a:active {
     margin: 0.1%;
-    color: #7F7116;
+    color: #FFE205;
 }
 .nav {
     white-space: nowrap;
     display: inline-block;
     margin: 0;
-    font-size: 0.9em;
+    font-size: 1.2em;
     height: 100%;
     padding: 2% 1% 2% 1%;
-    border-right: 1px solid #7F7116;
+    text-shadow: 0 1px 2px #557531;
+    border-right: 1px solid #FFE205;
     border-collapse: collapse;
     font-weight: bold;
-}
-#current {
-    color: #FFE205;
 }
 #last {
     border-right: none;
 }
+/*
+#EFE38A - beige
+#91B166 - greenish
+#FFE205 - yellow
+#E49400 - deep yellow
+*/
 /******************************************************************************
  Styling the body/container
 ******************************************************************************/
@@ -92,46 +102,47 @@ h2 {
     width: 100%;
 }
 #container a {
-    font-weight: bold;
     text-decoration: underline;
-    color: #453F16;
+    color: #DD5200;
 }
 h3 {
     position: absolute;
-    background-color: #453F16;
-    color: #FFE205;
+    background-color: #E49400;
+    color: #DD5200;
     width: 100%;
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: bold;
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-    padding-top: 1%;
-    padding-bottom: 2%;
+    padding: 1% 0 1% 0;
     text-align: center;
-    letter-spacing: 2px;
     z-index: 10;
 }
 p {
+    font-size: 1.1em;
     width: 80%;
     margin: 0% 5% 0% 5%;
-    background-color: #FFEB52;
-    padding: 15% 5% 5% 5%;
-    color: #453F16;
+    background-color: rgba(239,227,138,0.7);
+    padding: 20% 5% 5% 5%;
+    color: #886200;
     z-index: -5;
 }
+/*
+#EFE38A - beige
+#91B166 - greenish
+#FFE205 - yellow
+#E49400 - deep yellow
+*/
 /******************************************************************************
  Styling the footer
 ******************************************************************************/
 #footerrow {
     display: table-row;
     width: 100%;
-    background-color: #453F16;
+    background-color: #E49400;
 }
 #footer {
     display: table;
     width: 100%;
     background-color: inherit;
-    border-top: 2px solid #7F7116;
 }
 #name {
     display: block;
@@ -139,6 +150,7 @@ p {
     margin: 1% 0 1% 0;
     text-align: center;
     color: #FFE205;
+    text-shadow: 0px 2px 2px #668641;
 }
 #right {
     display: block;
@@ -148,6 +160,7 @@ p {
 #prolink {
     font-size: 1em;
     color: #FFE205;
+    text-shadow: 0px 2px 2px #557531;
     text-decoration: none;
     font-style: bold;
 }
