@@ -13,15 +13,15 @@ body {
     display: table;
     width: 100%;
     height: 100%;
-    background-color: #FFE205;
+    background-color: #0F3325;
 }
 /*
-#EFE38A - beige
-#91B166 - greenish
-#FFE205 - yellow
-#E49400 - deep yellow
-#DD5200 - orange
-*/
+ #BDDFB3 - lightest green
+ #009D57 - light green
+ #2C372E - grey-green
+ #0F2925 - deep green
+ #465F3F - dirty green
+ */
 /******************************************************************************
  Styling the header
 ******************************************************************************/
@@ -29,61 +29,57 @@ body {
     font-weight: bold;
     display: table-row;
     width: 100%;
-    background-color: #FFE205;
-}
-#header {
-    background-color: inherit;
-    width: 100%;
+    background-color: #2C372E;
+    box-shadow: 2px black;
 }
 a {
     text-decoration: none;
 }
 h1 {
-    font-size: 3em;
+    color: #BDDFB3;
+    font-size: 1.8em;
     padding: 2% 0 2% 5%;
-    color: #E49400;
-    letter-spacing: 4px;
-    text-shadow: 0px 2px 2px #B96900;
-    transition: color 2s;
-}
-h2 {
-    font-size: 1.3em;
-    text-align: center;
-    margin: 0.5% 0 0.5% 0%;
-    transition: text-shadow 2s, color 1s;
+    letter-spacing: 3px;
+    text-shadow: 0px 2px 2px #0F3325;
 }
 /*
-#EFE38A - beige
-#91B166 - greenish
-#FFE205 - yellow
-#E49400 - deep yellow
-*/
+ #BDDFB3 - lightest green
+ #009D57 - light green
+ #2C372E - grey-green
+ #0F2925 - deep green
+ #465F3F - dirty green
+ */
 /******************************************************************************
  Styling the navigation bar
 ******************************************************************************/
+#current {
+    padding: 2%;
+    text-align: center;
+}
 #navbar {
     display: table-row;
     width: 100%;
-    background-color: #E49400;
+    background-color: #2C372E;
     margin-bottom: 10%;
     text-align: center;
+    border-bottom: 2px solid #BDDFB3;
 }
 #links {
     width: 100%;
 }
 #links a, #links a:link, #links a:visited, #links a:hover, #links a:active {
     margin: 0.1%;
-    color: #FFE205;
+    color: #009D57;
 }
 .nav {
     white-space: nowrap;
     display: inline-block;
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1em;
     height: 100%;
     padding: 2% 1% 2% 1%;
-    text-shadow: 0 1px 2px #557531;
-    border-right: 1px solid #FFE205;
+    text-shadow: 0 1px 2px #0F2925;
+    border-right: 1px solid #0F2925;
     border-collapse: collapse;
     font-weight: bold;
 }
@@ -91,55 +87,49 @@ h2 {
     border-right: none;
 }
 /*
-#EFE38A - beige
-#91B166 - greenish
-#FFE205 - yellow
-#E49400 - deep yellow
-#DD5200 - orange
-*/
+ #BDDFB3 - lightest green
+ #009D57 - light green
+ #2C372E - grey-green
+ #0F2925 - deep green
+ #465F3F - dirty green
+ */
 /******************************************************************************
- Styling the body/container
-******************************************************************************/
+ * Styling the body/Container
+ *****************************************************************************/
 #container {
-    width: 100%;
+    color: #009D57;
+    padding: 2%;
 }
-#container a {
-    text-decoration: underline;
-    color: #DD5200;
+h2, h3 {
+    text-align: center;
+    color: #BDDFB3;
 }
 h3 {
-    position: absolute;
-    background-color: #E49400;
-    color: #DD5200;
-    width: 100%;
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 1% 0 1% 0;
-    text-align: center;
-    z-index: 10;
-}
-p {
     font-size: 1.1em;
+}
+li {
+    margin-left: 10%;
+    margin-right: 5%;
+}
+table {
     width: 90%;
-    margin: 0;
-    background-color: rgba(239,227,138,0.7);
-    padding: 15% 5% 5% 5%;
-    color: #886200;
-    z-index: -5;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 /*
-#EFE38A - beige
-#91B166 - greenish
-#FFE205 - yellow
-#E49400 - deep yellow
-*/
+ #BDDFB3 - lightest green
+ #009D57 - light green
+ #2C372E - grey-green
+ #0F2925 - deep green
+ #465F3F - dirty green
+ */
 /******************************************************************************
- Styling the footer
-******************************************************************************/
+ * Styling the footer
+ *****************************************************************************/
 #footerrow {
     display: table-row;
     width: 100%;
-    background-color: #E49400;
+    background-color: #2C372E;
     font-size: 1em;
 }
 #footer {
@@ -151,8 +141,8 @@ p {
     display: block;
     margin: 1% 0 1% 0;
     text-align: center;
-    color: #FFE205;
-    text-shadow: 0px 2px 2px #668641;
+    color: #BDDFB3;
+    text-shadow: 0px 2px 2px #0F2925;
 }
 #right {
     display: block;
@@ -160,8 +150,8 @@ p {
     margin: 1% 0 1% 0;
 }
 #prolink {
-    color: #FFE205;
-    text-shadow: 0px 2px 2px #557531;
+    color: #BDDFB3;
+    text-shadow: 0px 2px 2px #0F2925;
     text-decoration: none;
     font-style: bold;
 }

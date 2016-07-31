@@ -47,7 +47,8 @@
         font-size: 2em;
     }
     p {
-        padding-top: 15%;
+        padding-top: 15%;width: 80%;
+        margin: 0% 5% 0% 5%;
     }
     #h3text {
         text-align: center;
