@@ -19,7 +19,7 @@ body {
  #BDDFB3 - lightest green
  #009D57 - light green
  #2C372E - grey-green
- #0F2925 - deep green
+ #0F3325 - deep green
  #465F3F - dirty green
  */
 /******************************************************************************
@@ -46,7 +46,7 @@ h1 {
  #BDDFB3 - lightest green
  #009D57 - light green
  #2C372E - grey-green
- #0F2925 - deep green
+ #0F3325 - deep green
  #465F3F - dirty green
  */
 /******************************************************************************
@@ -90,7 +90,7 @@ h1 {
  #BDDFB3 - lightest green
  #009D57 - light green
  #2C372E - grey-green
- #0F2925 - deep green
+ #0F3325 - deep green
  #465F3F - dirty green
  */
 /******************************************************************************
@@ -98,7 +98,10 @@ h1 {
  *****************************************************************************/
 #container {
     color: #009D57;
-    padding: 2%;
+    padding: 5%;
+}
+p {
+    padding: 0 5% 0 5%;
 }
 h2, h3 {
     text-align: center;
@@ -106,6 +109,9 @@ h2, h3 {
 }
 h3 {
     font-size: 1.1em;
+}
+.subh {
+    color: #465F3F;
 }
 li {
     margin-left: 10%;
@@ -120,7 +126,7 @@ table {
  #BDDFB3 - lightest green
  #009D57 - light green
  #2C372E - grey-green
- #0F2925 - deep green
+ #0F3325 - deep green
  #465F3F - dirty green
  */
 /******************************************************************************

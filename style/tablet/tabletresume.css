@@ -1,0 +1,54 @@
+@media screen and (min-width: 480px) {
+    /*
+     #BDDFB3 - lightest green
+     #009D57 - light green
+     #2C372E - grey-green
+     #0F3325 - deep green
+     #465F3F - dirty green
+     */
+    h1 {
+        font-size: 2.2em;
+        text-shadow: 0px 3px 3px #0F3325;
+        transition: color 2s, text-shadow 2s;
+    }
+    h1:hover {
+        color: #0F2925;
+        text-shadow: 0px 0px 3px #BDDFB3;
+    }
+    .nav {
+        font-size: 1.2em;
+        min-width: 10%;
+        transition: background-color 1s, color 2s, box-shadow 1s;
+    }
+    .nav:hover {
+        /*background-color: #009D57;
+        color: #0F2925;
+        box-shadow: 0px 3px 2px black;*/
+        background-color: #0F3325;
+        color: #BDDFB3;
+        box-shadow: 0px -2px 1px #111111;
+    }
+    #current:hover {
+        /*Nothing happens / no changes on hover, to negate h1:hover*/
+        color: #BDDFB3;
+        text-shadow: 0px 3px 3px #0F3325;
+    }
+    #links a, #links a:link, #links a:visited, #links a:hover, #links a:active {
+        margin: 0;
+    }
+    #container {
+        font-size: 1.1em;
+        padding-top: 2%;
+    }
+    h2 {
+        margin: 1%;
+        font-size: 1.6em;
+    }
+    h3 {
+        margin-bottom: 1%;
+        font-size: 1.3em;
+    }
+    #footerrow {
+        font-size: 1.3em;
+    }
+}

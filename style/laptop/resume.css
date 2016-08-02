@@ -1,0 +1,45 @@
+@media screen and (min-width: 800px) {
+    /*
+     #BDDFB3 - lightest green
+     #009D57 - light green
+     #2C372E - grey-green
+     #0F3325 - deep green
+     #465F3F - dirty green
+     */
+    h1 {
+        font-size: 2.7em;
+    }
+    .nav {
+        font-size: 1.5em;
+        padding: 1%;
+    }
+    #container {
+        font-size: 1.3em;
+    }
+    h2 {
+        font-size: 2em;
+        border-top: 1px solid #BDDFB3;
+        border-bottom: 1px solid #BDDFB3;
+    }
+    h3 {
+        font-size: 1.6em;
+    }
+    #footerrow {
+        font-size: 1.4em;
+    }
+    #name {
+        display: table-cell;
+        border: none;
+        text-align: left;
+        padding: 2% 1% 2% 4%;
+    }
+    #right {
+        display: table-cell;
+        border: none;
+        text-align: right;
+        padding: 0 4% 0 0;
+    }
+    #prolink {
+        padding: 2% 1% 2% 1%;
+    }
+}
