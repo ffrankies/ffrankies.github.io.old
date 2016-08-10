@@ -1,0 +1,55 @@
+@media screen and (min-width: 480px) {
+
+    /*
+     #00CCFF - bright blue
+     #619CEE - light blue
+     #040438 - darkest blue
+     #004878 - dark blue
+     #C9FAFF - lightest blue
+    */
+    /*h1 {
+        font-size: 2.5em;
+    }*/
+    #headerrow {
+        float: left;
+        width: 30%;
+        height: 100%;
+        box-shadow: 2px 0px 3px #111111;
+    }
+    h1 {
+        text-align: center;
+        margin: 2.2em auto 0.5em auto;
+    }
+    .nav {
+        width: 100%;
+        text-align: center;
+        font-size: 1.2em;
+    }
+    #container {
+        margin-top: 0;
+        float: right;
+        width: 70%;
+    }
+    h2 {
+        font-size: 1.75em;
+    }
+    .post p {
+        font-size: 1.1em;
+    }
+    #footerrow {
+        clear: both;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+    #name {
+        display: inline-block;
+        text-align: left;
+        padding-left: 2em;
+    }
+    #right {
+        display: table-cell;
+        text-align: right;
+        padding-right: 2em;
+    }
+
+}
