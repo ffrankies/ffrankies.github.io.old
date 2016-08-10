@@ -91,7 +91,7 @@ var showMore = function(index) {
 /******************************************************************************
  * Shows the short version of the post that was clicked on (1000 characters in
  * the paragraph), and changes the onclick function of this post to showMore()
- *****************************************************************************/ 
+ *****************************************************************************/
 var showLess = function(index) {
 
     return function() {
@@ -119,7 +119,7 @@ document.addEventListener("readystatechange", function() {
         makeLinks();
 
         //This should display a truncated version of each blogpost on the site
-        for(var i = 0; i < links.length; ++i) {
+        for(var i = 0; i < links.length; ++i)
             loadFile(links[i]);
 
         //Action listener to display full post instead of the short version
