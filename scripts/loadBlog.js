@@ -111,24 +111,24 @@ document.addEventListener("readystatechange", function() {
 
     if(document.getReadyState === "interactive") {
 
-        print("document is interactive");
+        console.log("document is interactive");
         alert("doc is interactive");
         //Remove original "post" div from document - there should be only one
         var originalPost = document.getElementsByClassName("post")[0];
         var container = document.getElementById("container");
         container.removeChild("originalPost");
 
-        print("removed original post");
+        console.log("removed original post");
 
         makeLinks();
 
-        print("created links");
+        console.log("created links");
 
         //This should display a truncated version of each blogpost on the site
         for(var i = 0; i < links.length; ++i)
             loadFile(links[i]);
 
-        print("displayed short versions of posts");
+        console.log("displayed short versions of posts");
 
         //Action listener to display full post instead of the short version
         //upon click
@@ -139,7 +139,7 @@ document.addEventListener("readystatechange", function() {
 
         }
 
-        print("added action listeners");
+        console.log("added action listeners");
 
     }
 
