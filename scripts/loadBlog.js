@@ -31,6 +31,7 @@ var makeLinks = function() {
         text = text.replace(/ /g, "_");
         text = "../blogposts/" + text + ".html";
         links[p] = text;
+        console.log(links[p]);
 
     }
 
@@ -61,7 +62,7 @@ var display = function(content) {
     var contentDiv = document.createElement("div");
     contentDiv.className = "post";
     contentDiv.innerHTML = content;
-    var paragraph = content.getElementsByTagName("p")[0];
+    var paragraph = contentDiv.getElementsByTagName("p")[0];
     var shortText = paragraph.innerHTML.substring(0,1000);
     shortText += "...";
     paragraph.innerHTML = shortText;
