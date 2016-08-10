@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Acme);
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,700&subset=latin,latin-ext);
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Yanone Kaffeesatz','Acme', sans-serif;
+}
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+body {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: #619CEE;
+}
+/*
+ #00CCFF - bright blue
+ #619CEE - light blue
+ #040438 - darkest blue
+ #004878 - dark blue
+ #C9FAFF - lightest blue
+*/
+/******************************************************************************
+ * Styling the header
+ *****************************************************************************/
+#headerrow {
+    background-color: #111111;
+    position: sticky;
+    width: 100%;
+    height: 18%;
+    box-shadow: 0px 1px 3px #111111;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    color: #00CCFF;
+    font-size: 1.8em;
+    margin-left: 5%;
+    padding-top: 0.3em;
+    letter-spacing: 3px;
+    text-shadow: 0px 2px 2px #0F3325;
+}
+#navbar {
+    text-align: center;
+}
+.nav {
+    font-weight: bold;
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0.3em 1% 0.3em 1%;
+    color: #004878;
+}
+/*
+ #00CCFF - bright blue
+ #619CEE - light blue
+ #040438 - darkest blue
+ #004878 - dark blue
+ #C9FAFF - lightest blue
+*/
+/******************************************************************************
+ * Styling the content / container
+ *****************************************************************************/
+#container {
+    margin-top: 0.3em;
+}
+h2 {
+    width: 90%;
+    margin: 0.5em 0 0.5em 10%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #111111;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00CCFF;
+    padding: 0.1em 0 0.1em 0;
+    box-shadow: 0px 0px 5px #040438;
+}
+.post {
+    width: 84%;
+    margin: 0.5em 5% 0.5em 5%;
+    background-color: #DDDDFF;
+    padding: 0.3em 3% 0.3em 3%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px #040438;
+}
+h3 {
+    font-size: 1.3em;
+    color: #040438;
+    border-bottom: 2px solid #040438;
+}
+/*
+ #00CCFF - bright blue
+ #619CEE - light blue
+ #040438 - darkest blue
+ #004878 - dark blue
+ #C9FAFF - lightest blue
+*/
+/******************************************************************************
+ * Styling the footer
+ *****************************************************************************/
+ #footerrow {
+     width: 100%;
+     background-color: #111111;
+     padding: 0.2em 5% 0.2em 5%;
+     box-shadow: 0px -2px 3px #111111;
+ }
+ #footer {
+     display: table;
+     width: 100%;
+     background-color: inherit;
+     color: #004878;
+ }
+ #name {
+     display: block;
+     font-size: 1em;
+     text-align: center;
+ }
+ #right {
+     display: block;
+     text-align: center;
+ }
+ .prolink {
+     font-size: 1em;
+     text-decoration: none;
+     font-style: bold;
+     color: #004878;
+ }
