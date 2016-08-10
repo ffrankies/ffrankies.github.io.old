@@ -112,11 +112,11 @@ document.addEventListener("readystatechange", function() {
     if(document.readyState === "interactive") {
 
         console.log("document is interactive");
-        
+
         //Remove original "post" div from document - there should be only one
         var originalPost = document.getElementsByClassName("post")[0];
         var container = document.getElementById("container");
-        container.removeChild("originalPost");
+        container.removeChild(originalPost);
 
         console.log("removed original post");
 
