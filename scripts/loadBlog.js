@@ -25,10 +25,10 @@ var makeLinks = function() {
             selectedPosts[i] = allPosts[i];
 
     //replace spaces with dashes ("-"), add prefix to each link, store it
-    for(var p = 0; p < selectedPosts.length; ++p) {
+    for(var p = 0; p < selectedPosts.length - 1; ++p) {
 
         var text = selectedPosts[p];
-        text = text.replace(/ /g, "_");
+        text = text.replace(/ /g, "-");
         text = "../blogposts/" + text + ".html";
         links[p] = text;
         console.log(links[p]);
