@@ -109,10 +109,10 @@ var showLess = function(index) {
 
 document.addEventListener("readystatechange", function() {
 
-    if(document.getReadyState === "interactive") {
+    if(document.readyState === "interactive") {
 
         console.log("document is interactive");
-        alert("doc is interactive");
+        
         //Remove original "post" div from document - there should be only one
         var originalPost = document.getElementsByClassName("post")[0];
         var container = document.getElementById("container");
