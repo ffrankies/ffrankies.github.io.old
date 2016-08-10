@@ -95,7 +95,7 @@ h2 {
     /*box-shadow: 0px 0px 3px #111111;*/
 }
 .post:hover {
-    box-shadow: 0px 0px 5px #CCCCCC;
+    box-shadow: 0px 0px 5px white;
 }
 .post:active {
     box-shadow: 0px 0px 5px #111111;
