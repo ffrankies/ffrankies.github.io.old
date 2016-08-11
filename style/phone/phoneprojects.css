@@ -130,6 +130,9 @@ h3 {
 .project>div:hover {
     background-color: #2B1B2E;
 }
+p {
+    margin-top: 0.2em;
+}
 /*
 #2B1B2E - darkest purple
 #54344D - dark purple
@@ -146,14 +149,17 @@ h3 {
     width: 100%;
     background-color: #FFFFD6;
     height: 3em;
-    text-align: center;
     color: #6E444F;
 }
 #name {
+    text-align: center;
+    display: block;
     padding-top: 0.4em;
     margin-bottom: 0.4em;
 }
 #right {
+    text-align: center;
+    display: block;
     margin-top: 0.4em;
     margin-bottom: 0.4em;
 }

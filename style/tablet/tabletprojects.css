@@ -1,0 +1,29 @@
+@media screen and (min-width: 480px) {
+
+    /*
+     #BDDFB3 - lightest green
+     #009D57 - light green
+     #2C372E - grey-green
+     #0F3325 - deep green
+     #465F3F - dirty green
+     */
+     h1 {
+         font-size: 2.5em;
+     }
+     h2 {
+         font-size: 2em;
+     }
+     .nav {
+         font-weight: bold;
+         font-size: 1.3em;
+     }
+     h3 {
+         font-size: 1.7em;
+     }
+     p {
+         font-size: 1.1em;
+     }
+     #footerrow {
+         font-size: 1.2em;
+     }
+}

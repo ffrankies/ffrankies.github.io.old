@@ -1,0 +1,39 @@
+@media screen and (min-width: 800px) {
+
+    /*
+     #BDDFB3 - lightest green
+     #009D57 - light green
+     #2C372E - grey-green
+     #0F3325 - deep green
+     #465F3F - dirty green
+     */
+     h1 {
+         font-size: 3em;
+     }
+     .nav {
+         padding: 0.4em 1% 0.4em 1%;
+     }
+     .project>div {
+         padding-left: 1em;
+         padding-right: 1em;
+     }
+     #footerrow {
+         height: 2em;
+     }
+     #footer {
+         display: table;
+         width: 100%;
+         margin: 0.1em auto 0.1em auto;
+     }
+     #name {
+         display: table-cell;
+         padding-left: 2em;
+         text-align: left;
+     }
+     #right {
+         text-align: right;
+         display: table-cell;
+         padding-right: 2em;
+     }
+
+}
