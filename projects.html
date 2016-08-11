@@ -1,68 +1,150 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>ffrankie's lab | homepage</title>
-        <link type="text/css" rel="stylesheet" href="general.css" />
-        <link type="text/css" rel="stylesheet" href="projects.css" />
-    </head>
-    <body>
-        <div class="header">
-            <h1>ffrankies' laboratory</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ffrankies' projects - a showcase of my coding projects.">
+    <meta name="keywords" content="ffrankies, laboratory, projects, experiments, Frank, Wanye">
+    <meta name="author" content="Frank Wanye">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ffrankie's lab | projects</title>
+    <link type="text/css" rel="stylesheet"
+            href="style/phone/phoneprojects.css" />
+    <link type="text/css" rel="stylesheet"
+            href="style/tablet/tabletprojects.css" />
+    <link type="text/css" rel="stylesheet"
+            href="style/laptop/projects.css" />
+    <!-- <script src="scripts/loadBlog.js"></script> -->
+</head>
+<body>
+    <div id="headerrow">
+        <a href="index.html">
+            <div id="header">
+                <h1>ffrankies' laboratory</h1>
+                <h2>PROJECTS</h2>
+            </div>
+        </a>
+    </div>
+    <div id="navbar">
+        <div id="links">
+        <!-- <a href="index.html">HOME</a>
+        --><a href="about.html"><div class="nav">ABOUT ME</div></a><!--
+         --><a href="resume.html"><div class="nav">RE&#769SUME&#769<!--
+         --></div></a><!--
+         --><a href="blog.html"><div class="nav">BLOG</div></a><!--
+         <a href="projects.html"><div class="nav">PROJECTS</div></a>
+         --><a href="gallery.html"><div class="nav">GALLERY</div></a><!--
+         --><a href="library.html"><div class="nav" id="last">LIBRARY</div></a>
         </div>
-        <div class="navbar">
-            <a href="index.html">HOME</a>
-            <a href="about.html">ABOUT ME</a>
-            <a href="resume.html">RE&#769SUME&#769</a>
-            <a href="blog.html">BLOG</a>
-            <a href="projects.html" id="current">PROJECTS</a>
-            <a href="gallery.html">GALLERY</a>
-            <a href="library.html">LIBRARY</a>
-        </div>
-        <div class="body">
-            <h2>My Projects</h2>
-            <p>
-                Here you'll find links and short descriptions about those of my
-                projects that have reached a demonstrable stage.
-            </p>
-            <!-- <p id="warning">
-                This page is under construction.
-            </p> -->
-            <table>
-                <tr>
-                    <td>
-                        <a href="https://github.com/ffrankies/ffrankies.github.io" class="big">
-                            MY PERSONAL WEBSITE
-                        </a>
-                    </td>
-                    <td>
-                        <a href="https://github.com/ffrankies/ICPC" class="big" id="acm">
-                            ACM ICPC PROBLEMS
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="https://github.com/ffrankies/ToDoList" class="big" id="todolist">
-                            TO-DO-LIST WINDOWS APP
-                        </a>
-                    </td>
-                    <td>
-                        <a href="https://github.com/ffrankies/Surround" class="big">
-                            SIMPLE SURROUND GAME
-                        </a>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div class="footer">&copy 2016 Frank Wanye
-            <div class="right">
-                <a id="prolink" href="https://github.com/ffrankies">
+    </div>
+    <div id="container">
+        <!-- <p>
+            Here you'll find links and short descriptions about those of my
+            projects that have reached a demonstrable stage.
+        </p> -->
+        <!-- <p id="warning">
+            This page is under construction.
+        </p> -->
+        <a href="https://github.com/ffrankies/ToDoList" class="project">
+            <div>
+                <h3>To Do List</h3>
+                <p>
+                    Created a windows to-do-list app to keep track of tasks
+                    such as assignments. It allows users to add tasks with
+                    descriptions, set the dates on which they are to be
+                    completed, and check them off when completed. Tasks can
+                    also be set as repeatable.
+                </p>
+                <p>
+                    Status: On hold. Working, but with bugs to be ironed out.
+                    Possible additions: A refresh button, better visual design,
+                    redeveloping the load/save mechanism to make it more robust.
+                </p>
+            </div>
+        </a>
+        <a href="https://github.com/ffrankies/ICPC" class="project">
+            <div>
+                <h3>ACM Programming Challenge</h3>
+                <p>
+                    Solved problems from the ACM programming challenge (ICPC).
+                    Started out as class assingments, but I continued as
+                    preparation for participating in the contest in the Fall of
+                    2016.
+                </p>
+                <p>
+                    Status: In-progress
+                </p>
+            </div>
+        </a>
+        <a href="https://github.com/ffrankies/Surround" class="project">
+            <div>
+                <h3>Surround Game</h3>
+                <p>
+                    Wrote a simple Surround game as part of a class pair
+                    programming project. The objective of the game is to remain
+                    the last player on the board, while eliminating other
+                    players by surrounding their pieces on the board from four
+                    sides.
+                </p>
+                <p>
+                    Status: Completed
+                    Possible additions: A smart AI, a more robust file
+                    hierarchy, a game manual.
+                </p>
+            </div>
+        </a>
+        <a href="https://github.com/ffrankies/ffrankies.github.io"
+        class="project">
+            <div>
+                <h3>Personal Website</h3>
+                <p>
+                    Designed this personal website from scratch. It's made up
+                    of 7 web pages (possibly more to come), with content files
+                    stored separately of the webpages, and scripts to load and
+                    display the content dynamically using AJAX.
+                </p>
+                <p>
+                    Status: Completed, undergoing revamp
+                </p>
+            </div>
+        </a>
+        <!-- <table>
+            <tr>
+                <td>
+                    <a href="https://github.com/ffrankies/ffrankies.github.io" class="big">
+                        MY PERSONAL WEBSITE
+                    </a>
+                </td>
+                <td>
+                    <a href="https://github.com/ffrankies/ICPC" class="big" id="acm">
+                        ACM ICPC PROBLEMS
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/ffrankies/ToDoList" class="big" id="todolist">
+                        TO-DO-LIST WINDOWS APP
+                    </a>
+                </td>
+                <td>
+                    <a href="https://github.com/ffrankies/Surround" class="big">
+                        SIMPLE SURROUND GAME
+                    </a>
+                </td>
+            </tr>
+        </table> -->
+    </div>
+    <div id="footerrow">
+        <div id="footer"><div id="name">&copy 2016 Frank Wanye</div>
+            <div id="right">
+                <a class="prolink" href="https://github.com/ffrankies">
                     GitHub &trade;
                 </a> &#8195
-                <a id="prolink" href="https://www.linkedin.com/in/frankwanye">
+                <a class="prolink" href="https://www.linkedin.com/in/frankwanye">
                     LinkedIn &trade;
                 </a>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
