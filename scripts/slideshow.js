@@ -84,9 +84,15 @@ var nextImage = function() {
 
     var slide = document.getElementById("slide");
     var current = document.getElementById("current");
-    fadeOut(current);
+    // fadeOut(current);
+    current.style.display = "none";
     slide.innerHTML = "<img id='current' src='" + links[imageNumber] + "'/>";
-    fadeIn(current);
+    if(current.style.width > slide.style.width)
+        current.style.width = slide.style.width;
+    if(current.style.height > slide.style.height)
+        current.style.height = slide.style.height;
+    current.style.display = "block";
+    // fadeIn(current);
     // function fade(element) {
     // var op = 1;  // initial opacity
     // var timer = setInterval(function () {
@@ -110,8 +116,13 @@ document.addEventListener("readystatechange", function() {
         var slide = document.getElementById("slide");
         slide.innerHTML = "<img id='current' src='" + links[0] + "'/>";
         var current = document.getElementById("current");
-        current.style.display = "none";
-        fadeIn(current);
+        // current.style.display = "none";
+        if(current.style.width > slide.style.width)
+            current.style.width = slide.style.width;
+        if(current.style.height > slide.style.height)
+            current.style.height = slide.style.height;
+        current.style.display = "block";
+        // fadeIn(current);
 
         var timer = setInterval(function() {
 

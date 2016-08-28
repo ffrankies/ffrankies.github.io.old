@@ -94,7 +94,7 @@ a {
     padding: 0.2em 2% 0.2em 2%;
 }
 #current {
-    transition: opacity 0.1s;
+    display: none;
 }
 /******************************************************************************
 * Styling the footer
