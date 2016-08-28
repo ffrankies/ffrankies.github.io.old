@@ -35,6 +35,7 @@ var makeLinks = function() {
 var fadeOut = function(element) {
 
     var opacity = 1.00;
+    element.style.opacity = opacity;
 
     var timer = setInterval(function() {
 
@@ -47,6 +48,8 @@ var fadeOut = function(element) {
 
     }, 100); //Should take 2 seconds
 
+    element.style.display = "none";
+
 };
 
 /******************************************************************************
@@ -55,7 +58,8 @@ var fadeOut = function(element) {
 var fadeIn = function(element) {
 
     var opacity = 0.00;
-
+    element.style.opacity = opacity;
+    element.style.display = "block";
     var timer = setInterval(function() {
 
     if(opacity > 0) {
@@ -105,6 +109,9 @@ document.addEventListener("readystatechange", function() {
         makeLinks();
         var slide = document.getElementById("slide");
         slide.innerHTML = "<img id='current' src='" + links[0] + "'/>";
+        var current = document.getElementById("current");
+        current.style.display = "none";
+        fadeIn(current);
 
         var timer = setInterval(function() {
 

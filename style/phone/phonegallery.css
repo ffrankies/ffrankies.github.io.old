@@ -77,12 +77,18 @@ a {
 * Styling the container/body
 *****************************************************************************/
 #container {
-    width: 95%;
-    margin: 0.5em auto 0.5em auto;
+    display: table-row;
     padding: 0.2em;
-    background-color: #FF291E;
+    height: 100%;
 }
-#slides {
+#slideshow {
+    border: 0.7em solid #2b0606;
+    display: table-cell;
+    /*margin: 0.5em 1.5% 0.5em 1.5%;*/
+    background-color: #FF291E;
+    padding: 0.2em;
+}
+#slide {
     width: 96%;
     background-color: #111111;
     padding: 0.2em 2% 0.2em 2%;
