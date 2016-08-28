@@ -1,0 +1,23 @@
+@media screen and (min-width: 480px) {
+
+    /*
+     * Red - #FF291E
+     * Dark red - #2b0606
+     * White - #EEEEEE
+     * Black - #111111
+     */
+     h1 {
+         font-size: 2.4em;
+         margin-left: 7%
+     }
+     h2 {
+         margin-left: 7%;
+     }
+     .nav {
+         font-size: 1.2em;
+     }
+     #footerrow {
+         font-size: 1.1em;
+         height: 0.5em;
+     }
+}
