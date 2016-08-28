@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Yanone Kaffeesatz','Acme', sans-serif;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 html {
     height: 100%;
@@ -17,10 +17,14 @@ body {
     height: 100%;
     background-color: white;
 }
+/******************************************************************************
+ * Styling the header
+ *****************************************************************************/
 #headerrow {
     display: table-row;
     width: 100%;
     background-color: #111111;
+    height: 2em;
     /*top: 0;*/
     /*position: absolute;*/
 }
@@ -30,22 +34,189 @@ body {
     border-bottom: 3px solid #9e0000;
 }
 h1 {
-    font-size: 1.6em;
-    margin: 2% 0 1% 1.5%;
+    font-size: 2em;
+    margin: 0.2em 0 0.1em 0;
     color: #cccccc;
-    letter-spacing: 5px;
+    /*letter-spacing: 5px;*/
     text-shadow: -4px -4px 4px black, 3px 3px 3px #242424;
     transition: color 2s;
     text-align: center;
 }
+h1:hover {
+    color: #5a5a5a;
+}
 h2 {
     font-size: 1.3em;
     text-align: center;
-    margin: 0.5% 0 0.5% 1.5%;
+    margin: 0.2em 0 0.2em 1.5%;
     color: #5a5a5a;
     text-shadow: -2px -2px 2px black, 1px 1px 1px #242424;
     transition: text-shadow 2s, color 1s;
 }
+h2:hover {
+    text-shadow: 0px 0px 10px #cccccc;
+    color: #111111;
+}
+/******************************************************************************
+ * Styling the container/body
+ *****************************************************************************/
+#container {
+    align-items: center;
+	display: table-row;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	/*height: 100%;*/
+    background-color: #2b0606;
+}
+#menu {
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: none;
+    position: relative;
+    width: 100%;
+    /*height: 100%;*/
+}
+#wrapper {
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.tr {
+    width: 100%;
+}
+.item {
+    display: block;
+    position: relative;
+    margin: 0.25em 5% 0.25em 5%;
+    min-height: 40px;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    width: 90%;
+    max-height: 20%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    transition: background-color 2s;
+    background-color: #111111;
+    color: #5e5e5e;
+    text-shadow: 0px 0px 2px #000000;
+    font-weight: bold;
+    font-size: 1.7em;
+}
+.item:hover {
+    color: #EEEEEE;
+    text-shadow: 0px 0px 3px #000000;
+}
+.item:active {
+    text-shadow: 0px 0px 3px #EEEEEE;
+    color: #111111;
+    background-color: #111111;
+}
+.item>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#head {
+    -webkit-animation-name: darken;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 36s;
+    -webkit-animation-delay: 0s;
+    animation-name: darken;
+    animation-iteration-count: infinite;
+    animation-duration: 36s;
+    animation-delay: 0s;
+}
+#head:hover {
+    background-color: #FFE32D;
+    background-image: none;
+    /*color: #111111;*/
+    /*text-shadow: 0px 0px 2px #111111;*/
+    /*text-shadow: 0px 2px 2px #FFE32D;*/
+}
+#grad {
+    -webkit-animation-name: darken;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 36s;
+    -webkit-animation-delay: 6s;
+    animation-name: darken;
+    animation-iteration-count: infinite;
+    animation-duration: 36s;
+    animation-delay: 6s;
+}
+#grad:hover {
+    background-color: #73E02F;
+    background-image: none;
+}
+#bubble {
+    -webkit-animation-name: darken;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 36s;
+    -webkit-animation-delay: 12s;
+    animation-name: darken;
+    animation-iteration-count: infinite;
+    animation-duration: 36s;
+    animation-delay: 12s;
+}
+#bubble:hover {
+    background-color: #69CCE0;
+    background-image: none;
+}
+#flask {
+    -webkit-animation-name: darken;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 36s;
+    -webkit-animation-delay: 18s;
+    animation-name: darken;
+    animation-iteration-count: infinite;
+    animation-duration: 36s;
+    animation-delay: 18s;
+}
+#flask:hover {
+    background-color: #764DDD;
+    background-image: none;
+}
+#palette {
+    -webkit-animation-name: darken;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 36s;
+    -webkit-animation-delay: 24s;
+    animation-name: darken;
+    animation-iteration-count: infinite;
+    animation-duration: 36s;
+    animation-delay: 24s;
+}
+#palette:hover {
+    background-color: #FF291E;
+    background-image: none;
+}
+#A {
+    -webkit-animation-name: darken;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 36s;
+    -webkit-animation-delay: 30s;
+    animation-name: darken;
+    animation-iteration-count: infinite;
+    animation-duration: 36s;
+    animation-delay: 30s;
+}
+#A:hover {
+    background-color: #FF781D;
+    background-image: none;
+}
+#head:active, #grad:active, #bubble:active, #flask:active, #palette:active,
+#A:active {
+    background-color: #111111;
+}
+/******************************************************************************
+ * Styling the footer
+ *****************************************************************************/
 #footerrow {
     display: table-row;
     width: 100%;
@@ -69,90 +240,15 @@ h2 {
     text-align: center;
     margin: 1% 0 1% 0;
 }
-#prolink {
+.prolink {
     font-size: 1em;
     color: #cccccc;
     text-decoration: none;
     font-style: bold;
 }
-.container {
-    align-items: center;
-	display: table-row;
-	justify-content: center;
-	position: relative;
-	width: 100%;
-	height: 100%;
-    background-color: #2b0606;
+.prolink:hover {
+    color: #5a5a5a;
 }
-#menu {
-    display: inline-block;
-    margin-top: auto;
-    margin-bottom: auto;
-    background-color: none;
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-#wrapper {
-    display: inline-block;
-    margin-top: auto;
-    margin-bottom: auto;
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.tr {
-    width: 100%;
-}
-.item {
-    display: block;
-    position: relative;
-    margin: 1.5% 5% 1.5% 5%;
-    min-height: 40px;
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-    width: 90%;
-    max-height: 20%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    text-align: center;
-    transition: transform 2s;
-}
-.item>div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-style: bold;
-    font-size: 1.7em;
-}
-.head {
-    background-image: none;
-    background-color: #FFE32D;
-    color: #553603;
-}
-.grad {
-    background-image: none;
-    background-color: #73E02F;
-    color: #003003;
-}
-.bubble {
-    background-image: none;
-    background-color: #69CCE0;
-    color: #021130;
-}
-.A {
-    background-image: none;
-    background-color: #764DDD;
-    color: #210344;
-}
-.palette {
-    background-image: none;
-    background-color: #FF291E;
-    color: #330403;
-}
-.flask {
-    background-image: none;
-    background-color: #FF781D;
-    color: #332403;
+.prolink:active {
+    color: #000000;
 }
