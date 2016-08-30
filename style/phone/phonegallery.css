@@ -92,6 +92,7 @@ a {
     width: 96%;
     background-color: #111111;
     padding: 0.2em 2% 0.2em 2%;
+    text-align: center;
 }
 #current {
     display: none;
