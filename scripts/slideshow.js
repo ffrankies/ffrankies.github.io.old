@@ -139,21 +139,18 @@ $(document).ready(function(){
     //Takes content of index file and pastes it into allli
     makeLinks();
     //Sets default/first slideshow image
-    $("#slide").html('<img id="current" src="'+links[0]+'"/>');
-
-    //Force all li into strings if for some reason they're not
-    // for(i = 0; i < links.length; ++i) {
-    //     links[i] = '' + links[i];
-    // }
 
     var cw = $("#slide").width();
     cw = cw * 0.96;
     var ch = $("#slideshow").height();
     ch -= 13;
-    //alert("ch: " + ch + " cw: " + cw);
-    $("#current").css("max-width",cw);
-    $("#current").css("max-height",ch);
-    $("#current").css("vertical-align","center");
+
+    $("#slide").html('<img id="current" src="'+links[0]+'"/>');
+    $("#current").hide();
+    $("#current").css("max-width", cw);
+    $("#current").css("max-height", ch);
+    $("#current").css("vertical-align", "center"); //doesn't really work
+    $("#current").show();
     $("#current").height(ch);
     $("#current").width("auto");
     var w = $("#current").width();
