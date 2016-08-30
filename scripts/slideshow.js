@@ -40,8 +40,8 @@ $(document).ready(function(){
     ch -= 13;
     $("#next").height(ch);
     $("#prev").height(ch);
-    $("#buttons").width($("#slide").width());
-    $("#buttons").height(ch);
+    $("#buttons").width($("#slide").outerWidth());
+    $("#buttons").height($("#slide").outerHeight());
 
     $("#slide").html('<img id="current" src="'+links[0]+'"/>');
     $("#current").hide();
@@ -133,8 +133,8 @@ $(document).ready(function(){
         }
         $("#next").height(ch);
         $("#prev").height(ch);
-        $("#buttons").width($("#slide").width());
-        $("#buttons").height(ch);
+        $("#buttons").width($("#slide").outerWidth());
+        $("#buttons").height($("#slide").outerHeight());
 
     };
 
