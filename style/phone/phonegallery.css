@@ -95,7 +95,7 @@ a {
     text-align: center;
 }
 #current {
-    display: none;
+    /*display: none;*/
 }
 /******************************************************************************
 * Styling the footer
