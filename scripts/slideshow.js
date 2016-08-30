@@ -148,11 +148,13 @@ $(document).ready(function(){
 
     var cw = $("#slide").width();
     cw = cw * 0.96;
-    //var ch = $("#slide").height();
+    var ch = $("#slideshow").height();
+    ch -= 13;
     //alert("ch: " + ch + " cw: " + cw);
     $("#current").css("max-width",cw);
-    //$("#current").css("max-height",ch);
+    $("#current").css("max-height",ch);
     $("#current").css("vertical-align","center");
+    $("#current").height(ch);
     $("#current").width("auto");
     var w = $("#current").width();
     var h = $("#current").height();
@@ -174,7 +176,7 @@ $(document).ready(function(){
         $("#slide").html('<img id="current" src="'+links[k]+'"/>');
         $("#current").hide();
         $("#current").fadeIn(7000);
-        //$("#current").height(ch);
+        $("#current").height(ch);
         $("#current").width("auto");
         var w = $("#current").width();
         var h = $("#current").height();
@@ -182,7 +184,7 @@ $(document).ready(function(){
             $("#current").width(cw);
         }
         $("#current").css("max-width",cw);
-        // $("#current").css("max-height",ch);
+        $("#current").css("max-height",ch);
     }
 
     /*
