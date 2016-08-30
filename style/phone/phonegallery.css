@@ -97,7 +97,8 @@ a {
 #prev {
     padding-left: 20%;
     display: block;
-    float: left;
+    position: absolute;
+    left: 0;
     height: inherit;
     background-color: #111111;
     opacity: 0;
@@ -106,7 +107,8 @@ a {
 #next {
     padding-right: 20%;
     display: block;
-    float: right;
+    position: absolute;
+    right: 0;
     height: inherit;
     background-color: #111111;
     opacity: 0;
