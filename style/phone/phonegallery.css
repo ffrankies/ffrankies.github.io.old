@@ -106,7 +106,8 @@ a {
 #next {
     padding-right: 20%;
     position: absolute;
-    right: 0;
+    right: 20%;
+    top:0;
     height: inherit;
     background-color: #2b0606;
     opacity: 0;
