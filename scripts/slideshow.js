@@ -147,11 +147,18 @@ $(document).ready(function(){
     // }
 
     var cw = $("#slide").width();
+    cw = cw * 0.96;
     //var ch = $("#slide").height();
     //alert("ch: " + ch + " cw: " + cw);
     $("#current").css("max-width",cw);
     //$("#current").css("max-height",ch);
     $("#current").css("vertical-align","center");
+    $("#current").width("auto");
+    var w = $("#current").width();
+    var h = $("#current").height();
+    if ( w > cw ) {
+        $("#current").width(cw);
+    }
 
     //Changes images every 10000 milliseconds
     var k = 0;
