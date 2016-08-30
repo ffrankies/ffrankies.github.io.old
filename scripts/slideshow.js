@@ -29,183 +29,164 @@ var makeLinks = function() {
 
 };
 
-/******************************************************************************
- * Fades an image out by reducing its opacity over time
- *****************************************************************************/
-var fadeOut = function(element) {
-
-    var opacity = 1.00;
-    element.style.opacity = opacity;
-
-    var timer = setInterval(function() {
-
-        if(opacity > 0) {
-            opacity -= 0.05;
-            element.style.opacity = opacity;
-        }
-        else
-            clearInterval(timer);
-
-    }, 100); //Should take 2 seconds
-
-    element.style.display = "none";
-
-};
-
-/******************************************************************************
- * Fades an image in by increasing its opacity over time
- *****************************************************************************/
-var fadeIn = function(element) {
-
-    var opacity = 0.00;
-    element.style.opacity = opacity;
-    element.style.display = "block";
-    var timer = setInterval(function() {
-
-    if(opacity > 0) {
-        opacity += 0.05;
-        element.style.opacity = opacity;
-    }
-    else
-        clearInterval(timer);
-
-    }, 100); //Should take 2 seconds
-
-};
-
-/******************************************************************************
- * Switches to next image in slideshow
- *****************************************************************************/
-var nextImage = function() {
-
-    imageNumber++;
-    if(imageNumber == links.length)
-        imageNumber = 0;
-
-    var slide = document.getElementById("slide");
-    var current = document.getElementById("current");
-    // fadeOut(current);
-    current.style.display = "none";
-    slide.innerHTML = "<img id='current' src='" + links[imageNumber] + "'/>";
-    if(current.style.width > slide.style.width)
-        current.style.width = slide.style.width;
-    if(current.style.height > slide.style.height)
-        current.style.height = slide.style.height;
-    current.style.display = "block";
-    // fadeIn(current);
-    // function fade(element) {
-    // var op = 1;  // initial opacity
-    // var timer = setInterval(function () {
-    //     if (op <= 0.1){
-    //         clearInterval(timer);
-    //         element.style.display = 'none';
-    //     }
-    //     element.style.opacity = op;
-    //     element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-    //     op -= op * 0.1;
-    // }, 50);
-// }
-};
-
-document.addEventListener("readystatechange", function() {
-
-    if(document.readyState === "interactive") {
-
-        console.log("document is interactive");
-        makeLinks();
-        var slide = document.getElementById("slide");
-        slide.innerHTML = "<img id='current' src='" + links[0] + "'/>";
-        var current = document.getElementById("current");
-        // current.style.display = "none";
-        if(current.style.width > slide.style.width)
-            current.style.width = slide.style.width;
-        if(current.style.height > slide.style.height)
-            current.style.height = slide.style.height;
-        current.style.display = "block";
-        // fadeIn(current);
-
-        var timer = setInterval(function() {
-
-            nextImage();
-
-        }, 10 * 1000);
-
-    }
-
-});
-
-
-// $(document).ready(function(){
-//     //Takes content of index file and pastes it into allli
-//     var rawFile = new XMLHttpRequest();
-//     rawFile.open("GET", ind, false);
-//     rawFile.onreadystatechange = function ()
-//     {
-//         if(rawFile.readyState === 4)
-//         {
-//             var allText = rawFile.responseText;
-//             allli = allText;
+// /******************************************************************************
+//  * Fades an image out by reducing its opacity over time
+//  *****************************************************************************/
+// var fadeOut = function(element) {
+//
+//     var opacity = 1.00;
+//     element.style.opacity = opacity;
+//
+//     var timer = setInterval(function() {
+//
+//         if(opacity > 0) {
+//             opacity -= 0.05;
+//             element.style.opacity = opacity;
 //         }
+//         else
+//             clearInterval(timer);
+//
+//     }, 100); //Should take 2 seconds
+//
+//     element.style.display = "none";
+//
+// };
+//
+// /******************************************************************************
+//  * Fades an image in by increasing its opacity over time
+//  *****************************************************************************/
+// var fadeIn = function(element) {
+//
+//     var opacity = 0.00;
+//     element.style.opacity = opacity;
+//     element.style.display = "block";
+//     var timer = setInterval(function() {
+//
+//     if(opacity > 0) {
+//         opacity += 0.05;
+//         element.style.opacity = opacity;
 //     }
-//     rawFile.send(null);
+//     else
+//         clearInterval(timer);
 //
-//     li = allli.split('\n');
-//     var str = start + li[0];
-//     var i = 0;
-//     var len = li.length;
+//     }, 100); //Should take 2 seconds
 //
-//     //Sets default/first slideshow image
-//     $("#slides").html('<img id="slide" src="'+str+'"></img>');
+// };
 //
-//     //Force all li into strings if for some reason they're not
-//     for(i = 0; i < len - 1; ++i) {
-//         li[i] = '' + li[i];
-//     }
+// /******************************************************************************
+//  * Switches to next image in slideshow
+//  *****************************************************************************/
+// var nextImage = function() {
 //
-//     var cw = $("#slides").width();
-//     var ch = $("#slides").height();
-//     $("#slide").css("max-width",cw);
-//     $("#slide").css("max-height",ch);
-//     $("#slide").css("vertical-align","center");
+//     imageNumber++;
+//     if(imageNumber == links.length)
+//         imageNumber = 0;
 //
-//     //Changes images every 10000 milliseconds
-//     var k = 0;
-//     var show = setInterval(function() {
+//     var slide = document.getElementById("slide");
+//     var current = document.getElementById("current");
+//     // fadeOut(current);
+//     current.style.display = "none";
+//     slide.innerHTML = "<img id='current' src='" + links[imageNumber] + "'/>";
+//     if(current.style.width > slide.style.width)
+//         current.style.width = slide.style.width;
+//     if(current.style.height > slide.style.height)
+//         current.style.height = slide.style.height;
+//     current.style.display = "block";
+//     // fadeIn(current);
+//     // function fade(element) {
+//     // var op = 1;  // initial opacity
+//     // var timer = setInterval(function () {
+//     //     if (op <= 0.1){
+//     //         clearInterval(timer);
+//     //         element.style.display = 'none';
+//     //     }
+//     //     element.style.opacity = op;
+//     //     element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+//     //     op -= op * 0.1;
+//     // }, 50);
+// // }
+// };
+//
+// document.addEventListener("readystatechange", function() {
+//
+//     if(document.readyState === "interactive") {
+//
+//         console.log("document is interactive");
+//         makeLinks();
+//         var slide = document.getElementById("slide");
+//         slide.innerHTML = "<img id='current' src='" + links[0] + "'/>";
+//         var current = document.getElementById("current");
+//         // current.style.display = "none";
+//         if(current.style.width > slide.style.width)
+//             current.style.width = slide.style.width;
+//         if(current.style.height > slide.style.height)
+//             current.style.height = slide.style.height;
+//         current.style.display = "block";
+//         // fadeIn(current);
+//
+//         var timer = setInterval(function() {
+//
 //             nextImage();
+//
 //         }, 10 * 1000);
 //
-//     function nextImage() {
-//         k++;
-//         if (k == len - 1)//because imageindex has an empty line at end
-//             k = 0;
-//
-//         str = start.concat(li[k]);
-//
-//
-//         $("#slides").html('<img id="slide" src="'+str+'"></img>');
-//         $("#slide").hide();
-//         $("#slide").fadeIn(7000);
-//         $("#slide").height(ch);
-//         $("#slide").width("auto");
-//         var w = $("#slide").width();
-//         var h = $("#slide").height();
-//         if ( w > cw ) {
-//             $("#slide").width(cw);
-//         }
-//         $("#slide").css("max-width",cw);
-//         $("#slide").css("max-height",ch);
 //     }
-//
-//     /*
-//      * Loads next image when slideshow is clicked on
-//      */
-//     $("#slides").click(function() {
-//         $("#slide").stop();
-//         nextImage();
-//         clearInterval(show);
-//         show = setInterval(function() {
-//             nextImage();
-//         }, 10 * 1000);
-//     });
 //
 // });
+
+
+$(document).ready(function(){
+    //Takes content of index file and pastes it into allli
+    makeLinks();
+    //Sets default/first slideshow image
+    $("#slide").html('<img id="current" src="'+links[0]+'"/>');
+
+    //Force all li into strings if for some reason they're not
+    // for(i = 0; i < links.length; ++i) {
+    //     links[i] = '' + links[i];
+    // }
+
+    var cw = $("#slide").width();
+    var ch = $("#slide").height();
+    $("#current").css("max-width",cw);
+    $("#current").css("max-height",ch);
+    $("#current").css("vertical-align","center");
+
+    //Changes images every 10000 milliseconds
+    var k = 0;
+    var show = setInterval(function() {
+            nextImage();
+        }, 10 * 1000);
+
+    function nextImage() {
+        k++;
+        if (k == links.length)
+            k = 0;
+
+        $("#slide").html('<img id="current" src="'+links[k]+'"/>');
+        $("#current").hide();
+        $("#current").fadeIn(7000);
+        $("#current").height(ch);
+        $("#current").width("auto");
+        var w = $("#current").width();
+        var h = $("#current").height();
+        if ( w > cw ) {
+            $("#current").width(cw);
+        }
+        $("#current").css("max-width",cw);
+        $("#current").css("max-height",ch);
+    }
+
+    /*
+     * Loads next image when slideshow is clicked on
+     */
+    $("#slide").click(function() {
+        $("#current").stop();
+        nextImage();
+        clearInterval(show);
+        show = setInterval(function() {
+            nextImage();
+        }, 10 * 1000);
+    });
+
+});
