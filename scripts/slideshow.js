@@ -40,7 +40,8 @@ $(document).ready(function(){
     ch -= 13;
     $("#next").height(ch);
     $("#prev").height(ch);
-    $("#buttons").width(cw);
+    $("#buttons").width($("#slide").width());
+    $("#buttons").height(ch);
 
     $("#slide").html('<img id="current" src="'+links[0]+'"/>');
     $("#current").hide();
@@ -132,7 +133,8 @@ $(document).ready(function(){
         }
         $("#next").height(ch);
         $("#prev").height(ch);
-        $("#buttons").width(cw);
+        $("#buttons").width($("#slide").width());
+        $("#buttons").height(ch);
 
     };
 
