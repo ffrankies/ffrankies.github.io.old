@@ -100,7 +100,7 @@ a {
     position: absolute;
     left: 0;
     height: inherit;
-    background-color: #111111;
+    background-color: #2b0606;
     opacity: 0;
     height: 200px;
 }
@@ -110,7 +110,7 @@ a {
     position: absolute;
     right: 0;
     height: inherit;
-    background-color: #111111;
+    background-color: #2b0606;
     opacity: 0;
     height: 200px;
 }
