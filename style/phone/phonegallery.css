@@ -94,8 +94,29 @@ a {
     padding: 0.2em 2% 0.2em 2%;
     text-align: center;
 }
-#current {
-    /*display: none;*/
+#prev {
+    padding-left: 20%;
+    display: block;
+    float: left;
+    height: inherit;
+    background-color: #111111;
+    opacity: 0;
+    height: 200px;
+}
+#next {
+    padding-right: 20%;
+    display: block;
+    float: right;
+    height: inherit;
+    background-color: #111111;
+    opacity: 0;
+    height: 200px;
+}
+#prev:hover, #next:hover {
+    opacity: 0.2;
+}
+#prev:active, #next:active {
+    opacity: 0.4;
 }
 /******************************************************************************
 * Styling the footer

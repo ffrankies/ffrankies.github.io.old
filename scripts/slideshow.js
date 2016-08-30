@@ -38,6 +38,8 @@ $(document).ready(function(){
     cw = cw * 0.96;
     var ch = $("#slideshow").height();
     ch -= 13;
+    $("#next").height(ch);
+    $("#prev").height(ch);
 
     $("#slide").html('<img id="current" src="'+links[0]+'"/>');
     $("#current").hide();
@@ -63,9 +65,34 @@ $(document).ready(function(){
      * Fades out current image, fades in next image from links array
      */
     function nextImage() {
+
         k++;
         if (k == links.length)
             k = 0;
+
+        $("#slide").html('<img id="current" src="'+links[k]+'"/>');
+        $("#current").hide();
+        $("#current").fadeIn(7000);
+        $("#current").height(ch);
+        $("#current").width("auto");
+        var w = $("#current").width();
+        var h = $("#current").height();
+        if ( w > cw ) {
+            $("#current").width(cw);
+        }
+        $("#current").css("max-width",cw);
+        $("#current").css("max-height",ch);
+
+    };
+
+    /*
+     * Fades out current image, fades in previous image from links array
+     */
+    function prevImage() {
+
+        k--;
+        if (k == -1)
+            k = links.length - 1;
 
         $("#slide").html('<img id="current" src="'+links[k]+'"/>');
         $("#current").hide();
@@ -102,16 +129,29 @@ $(document).ready(function(){
         if ( w > cw ) {
             $("#current").width(cw);
         }
+        $("#next").height(ch);
+        $("#prev").height(ch);
 
     };
 
     /*
-     * Loads next image when slideshow is clicked on
+     * Loads next/previous image when right part is clicked on
      */
-    $("#slide").click(function() {
+    $("#next").click(function() {
 
         $("#current").stop();
         nextImage();
+        clearInterval(show);
+        show = setInterval(function() {
+            nextImage();
+        }, 10 * 1000);
+
+    });
+
+    $("#prev").click(function() {
+
+        $("#current").stop();
+        prevImage();
         clearInterval(show);
         show = setInterval(function() {
             nextImage();
