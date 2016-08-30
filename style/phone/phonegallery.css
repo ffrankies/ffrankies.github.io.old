@@ -100,6 +100,7 @@ a {
     width: 100px;
 }
 #prev {
+    padding: 0.2em auto 0.2em auto;
     padding-left: 20%;
     float: left;
     height: inherit;
@@ -108,6 +109,7 @@ a {
     height: 200px;
 }
 #next {
+    padding: 0.2em auto 0.2em auto;
     padding-right: 20%;
     float: right;
     height: inherit;
