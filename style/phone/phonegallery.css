@@ -94,10 +94,14 @@ a {
     padding: 0.2em 2% 0.2em 2%;
     text-align: center;
 }
+#buttons {
+    position: absolute;
+    display: block;
+    width: 100px;
+}
 #prev {
     padding-left: 20%;
-    position: absolute;
-    left: 0;
+    float: left;
     height: inherit;
     background-color: #2b0606;
     opacity: 0;
@@ -105,8 +109,7 @@ a {
 }
 #next {
     padding-right: 20%;
-    position: absolute;
-    right: 0;
+    float: right;
     height: inherit;
     background-color: #2b0606;
     opacity: 0;
