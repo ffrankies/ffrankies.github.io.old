@@ -148,6 +148,7 @@ $(document).ready(function(){
 
     var cw = $("#slide").width();
     var ch = $("#slide").height();
+    alert("ch: " + ch + " cw: " + cw);
     $("#current").css("max-width",cw);
     $("#current").css("max-height",ch);
     $("#current").css("vertical-align","center");
