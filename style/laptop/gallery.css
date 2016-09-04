@@ -21,6 +21,7 @@
          background-color: #FF291E;
          padding-left: 30%;
          width: 70%;
+         animation: colorRotate 10s linear infinite;
      }
      .nav {
          background-color: #111111;
