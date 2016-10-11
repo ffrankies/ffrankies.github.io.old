@@ -1,59 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>ffrankie's lab | library</title>
-        <link type="text/css" rel="stylesheet" href="general.css" />
-        <link type="text/css" rel="stylesheet" href="blog.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
-        </script>
-        <script>
-            var ind = "stories/storyindex.txt";
-            var nf = "notFound.html";
-            var start = "stories/";
-        </script>
-        <script src="loadContent.js"></script>
-    </head>
-    <body>
-        <div class="header">
-            <h1>ffrankies' laboratory | LIBRARY</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ffrankies' library - a collection of my
+    attempts at writing stories.">
+    <meta name="keywords" content="ffrankies, laboratory, library, stories, Frank, Wanye, vignettes">
+    <meta name="author" content="Frank Wanye">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ffrankie's lab | library</title>
+    <link type="text/css" rel="stylesheet"
+            href="style/phone/phonelibrary.css" />
+    <link type="text/css" rel="stylesheet"
+            href="style/tablet/tabletlibrary.css" />
+    <link type="text/css" rel="stylesheet"
+            href="style/laptop/library.css" />
+    <script src="scripts/loadLibrary.js"></script>
+</head>
+<body>
+    <div id="headerrow">
+        <a href="index.html">
+            <div id="header">
+                <h1>ffrankies' library</h1>
+                <!-- <h2>ffrankies' experiments</h2> -->
+            </div>
+        </a>
+        <div id="navbar">
+            <div id="links">
+                <!-- <a href="index.html">HOME</a>
+             --><a href="about.html"><div class="nav">ABOUT ME</div></a><!--
+             --><a href="resume.html"><div      class="nav">RE&#769SUME&#769</div></a><!--
+             --><a href="blog.html"><div class="nav">BLOG</div></a><!--
+             --><a href="projects.html"><div class="nav">PROJECTS</div></a><!--
+             --><a href="gallery.html"><div class="nav" id="last">GALLERY</div></a><!--
+             --><!--a href="library.html"><div class="nav"
+             id="last">LIBRARY</div></a>-->
+            </div>
         </div>
-        <div class="navbar">
-            <a href="index.html">HOME</a>
-            <a href="about.html">ABOUT ME</a>
-            <a href="resume.html">RE&#769SUME&#769</a>
-            <a href="blog.html">BLOG</a>
-            <a href="projects.html">PROJECTS</a>
-            <a href="gallery.html">GALLERY</a>
-            <a href="library.html" id="current">LIBRARY</a>
-        </div>
-        <div class="sidebar">
-        </div>
-        <div class="body">
-            <!--h3><a name="s1"></a>Deathbed</h3-->
-            <p id="content">
-                <span>
+    </div>
+    <div id="container">
+        <!--h2>ffrankies' stories</h2-->
+        <div class="post">
+            <h3>Error Loading Posts</h3>
+            <p>
                 If you're seeing this paragraph, a vital script has probably
                 failed to load. Please try enabling javascript in your browser
                 and refreshing the page. If that doesn't work, please contact
                 me and I will try to fix the problem.
-                </span>
             </p>
-            <script>
-                $("#content").load("stories/Where_Lost_Things_Go.html");
-            </script>
         </div>
-        <script>
-            $(".body").css("min-height","700px");
-        </script>
-        <div class="footer">&copy 2016 Frank Wanye
-            <div class="right">
-                <a id="prolink" href="https://github.com/ffrankies">
+    </div>
+    <div id="footerrow">
+        <div id="footer"><span id="name">&copy 2016 Frank Wanye</span>
+            <div id="right">
+                <a class="prolink" href="https://github.com/ffrankies">
                     GitHub &trade;
                 </a> &#8195
-                <a id="prolink" href="https://www.linkedin.com/in/frankwanye">
+                <a class="prolink" href="https://www.linkedin.com/in/frankwanye">
                     LinkedIn &trade;
                 </a>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
