@@ -90,6 +90,12 @@ h2:hover {
     width: 100%;
 }
 .item {
+    -webkit-animation-name: darken;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 36s;
+    animation-name: darken;
+    animation-iteration-count: infinite;
+    animation-duration: 36s;
     display: block;
     position: relative;
     margin: 0.25em 5% 0.25em 5%;
@@ -101,21 +107,27 @@ h2:hover {
     background-size: contain;
     background-repeat: no-repeat;
     text-align: center;
-    transition: background-color 2s;
+    /*transition: background-color 2s;*/
     background-color: #111111;
-    color: #5e5e5e;
+    color: #8e8e8e;
     text-shadow: 0px 0px 2px #000000;
     font-weight: bold;
     font-size: 1.7em;
+    background-size: 202% 100%;
+    transition: background-position 1s;
+    background-position: 2% 0;
 }
 .item:hover {
-    color: #EEEEEE;
-    text-shadow: 0px 0px 3px #000000;
+    /*color: #EEEEEE;*/
+    /*text-shadow: 0px 0px 3px #000000;*/
+    background-position: 80% 0;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 3px #000000, 2px 0px 3px #000000;
 }
 .item:active {
-    text-shadow: 0px 0px 3px #EEEEEE;
-    color: #111111;
-    background-color: #111111;
+    background-position: 100% 0;
+    /*color: #111111;*/
+    /*background-color: #111111;*/
 }
 .item>div {
     position: absolute;
@@ -124,91 +136,60 @@ h2:hover {
     transform: translate(-50%, -50%);
 }
 #head {
-    -webkit-animation-name: darken;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 36s;
     -webkit-animation-delay: 0s;
-    animation-name: darken;
-    animation-iteration-count: infinite;
-    animation-duration: 36s;
     animation-delay: 0s;
+    background-image: linear-gradient(to right, #111111 50%, #FFE32D 50%);
 }
 #head:hover {
-    background-color: #FFE32D;
-    background-image: none;
+    /*background-image: none;*/
     /*color: #111111;*/
     /*text-shadow: 0px 0px 2px #111111;*/
     /*text-shadow: 0px 2px 2px #FFE32D;*/
 }
 #grad {
-    -webkit-animation-name: darken;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 36s;
     -webkit-animation-delay: 6s;
-    animation-name: darken;
-    animation-iteration-count: infinite;
-    animation-duration: 36s;
     animation-delay: 6s;
+    background-image: linear-gradient(to right, #111111 50%, #73E02F 50%);
 }
 #grad:hover {
-    background-color: #73E02F;
-    background-image: none;
+    /*background-color: #73E02F;
+    background-image: none;*/
 }
 #bubble {
-    -webkit-animation-name: darken;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 36s;
     -webkit-animation-delay: 12s;
-    animation-name: darken;
-    animation-iteration-count: infinite;
-    animation-duration: 36s;
     animation-delay: 12s;
+    background-image: linear-gradient(to right, #111111 50%, #69CCE0 50%);
 }
 #bubble:hover {
-    background-color: #69CCE0;
-    background-image: none;
+    /*background-color: #69CCE0;
+    background-image: none;*/
 }
 #flask {
-    -webkit-animation-name: darken;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 36s;
     -webkit-animation-delay: 18s;
-    animation-name: darken;
-    animation-iteration-count: infinite;
-    animation-duration: 36s;
     animation-delay: 18s;
+    background-image: linear-gradient(to right, #111111 50%, #764DDD 50%);
 }
 #flask:hover {
-    background-color: #764DDD;
-    background-image: none;
+    /*background-color: #764DDD;
+    background-image: none;*/
 }
 #palette {
-    -webkit-animation-name: darken;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 36s;
     -webkit-animation-delay: 24s;
-    animation-name: darken;
-    animation-iteration-count: infinite;
-    animation-duration: 36s;
     animation-delay: 24s;
+    background-image: linear-gradient(to right, #111111 50%, #FF291E 50%);
 }
 #palette:hover {
-    background-color: #FF291E;
-    background-image: none;
+    /*background-color: #FF291E;
+    background-image: none;*/
 }
 #A {
-    -webkit-animation-name: darken;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 36s;
     -webkit-animation-delay: 30s;
-    animation-name: darken;
-    animation-iteration-count: infinite;
-    animation-duration: 36s;
     animation-delay: 30s;
+    background-image: linear-gradient(to right, #111111 50%, #FF781D 50%);
 }
 #A:hover {
-    background-color: #FF781D;
-    background-image: none;
+    /*background-color: #FF781D;
+    background-image: none;*/
 }
 #head:active, #grad:active, #bubble:active, #flask:active, #palette:active,
 #A:active {

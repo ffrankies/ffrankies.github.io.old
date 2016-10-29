@@ -1,57 +1,28 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
     h1 {
         font-size: 3.5em;
         /*margin-left: 5%;*/
-        margin: 1.5% 0 0.25% 5%;
+        margin: 0.19em 0 0.19em 5%;
     }
     h2 {
         font-size: 2.5em;
-        margin: 0 0 0.5% 5%;
+        margin: 0 0 0.1em 5%;
     }
     .item {
         font-size: 3.5em;
         width: 27.9%;
-        padding-top: 1.1em;
-        padding-bottom: 1.1em;
-        background-position: center;
-        /*background-color: rgba(17,17,17,0.5);*/
+        padding-top: 1.08em;
+        padding-bottom: 1.08em;
     }
     .item div {
         position: absolute;
         text-align: center;
         padding: 0;
         transform: translate(-50%, -50%);
-        /*opacity: 1;*/
         width: 75%;
         text-indent: 10px;
-        /*background-color: rgba(17,17,17,0.5);*/
-        /*border-width: 5px;
-        border-top-style: double;
-        border-bottom-style: double;
-        padding-top: 2%;*/
     }
-    .grad div {
-        padding-top: 2%;
-    }
-    /*.head {
-        color: #553603;
-    }
-    .grad {
-        color: #003003;
-    }
-    .bubble {
-        color: #021130;
-    }
-    .A {
-        color: #210344;
-    }
-    .palette {
-        color: #330403;
-    }
-    .flask {
-        color: #332403;
-    }*/
     #footerrow {
-        font-size: 1.5em;
+        font-size: 1.48em;
     }
 }
