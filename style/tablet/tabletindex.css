@@ -23,114 +23,29 @@
         -webkit-animation-iteration-count: infinite;
     }
     #menu {
-        display: block;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: stretch;
         width: 100%;
-        /*transform: translateY(-100%);*/
     }
-    /*Makes menu items show icon originally, text when moused over*/
     .item {
         background-color: #111111;
-        /*background-position: left;*/
-        display: inline-block;
-        /*border: 2px solid white;*/
         margin: 0.15em 2.5% 0.15em 2.5%;
         padding: 0.8em 0 0.8em 0;
-        width: 44.5%;
-        min-height: 80px;
+        width: 45%;
+        min-width: 45%;
+        min-height: 60px;
         font-size: 2.25em;
         border-radius: 10px;
         box-shadow: 0px 0px 4px #111111;
-    }
-    .item div {
-        width: 100%;
-        animation-name: glow;
-        animation-duration: 30s;
-        animation-iteration-count: infinite;
-        -webkit-animation-name: glow;
-        -webkit-animation-duration: 30s;
-        -webkit-animation-iteration-count: infinite;
     }
     .item:hover {
         box-shadow: 0px 0px 5px #000000;
         /*border-width: 5px;*/
     }
-    .head {
-        background-image: url("../../images/icons/head_small.png");
-        border-color: #FFE32D;
-        color: #FFE32D;
-    }
-    /*.head:hover {
-        box-shadow: 10px 10px 20px #FFE32D;
-        /*box-shadow: 0px 0px 20px #111111;
-    }*/
-    .head div {
-        animation-delay: 0s;
-        -webkit-animation-delay: 0s;
-    }
-    .grad {
-        background-image: url("../../images/icons/grad_small.png");
-        border-color: #73E02F;
-        color: #73E02F;
-    }
-    /*.grad:hover {
-        box-shadow: 10px 10px 20px #73E02F;
-    }*/
-    .grad div {
-        animation-delay: 5s;
-        -webkit-animation-delay: 5s;
-    }
-    .bubble {
-        background-image: url("../../images/icons/bubble_small.png");
-        border-color: #69CCE0;
-        color: #69CCE0;
-    }
-    /*.bubble:hover {
-        box-shadow: 10px 10px 20px #69CCE0;
-    }*/
-    .bubble div {
-        animation-delay: 10s;
-        -webkit-animation-delay: 10s;
-    }
-    .A {
-        background-image: url("../../images/icons/A_small.png");
-        border-color: #764DDD;
-        color: #764DDD;
-    }
-    /*.A:hover {
-        box-shadow: 10px 10px 20px #764DDD;
-    }*/
-    .A div {
-        animation-delay: 15s;
-        -webkit-animation-delay: 15s;
-    }
-    .palette {
-        background-image: url("../../images/icons/palette_small.png");
-        border-color: #FF291E;
-        color: #FF291E;
-    }
-    /*.palette:hover {
-        box-shadow: 10px 10px 20px #FF291E;
-    }*/
-    .palette div {
-        animation-delay: 20s;
-        -webkit-animation-delay: 20s;
-    }
-    .flask {
-        background-image: url("../../images/icons/flask_small.png");
-        border-color: #FF781D;
-        color: #FF781D;
-        animation-delay: 20s;
-        -webkit-animation-delay: 20s;
-    }
-    /*.flask:hover {
-        box-shadow: 10px 10px 20px #FF781D;
-    }*/
-    .flask div {
-        animation-delay: 25s;
-        -webkit-animation-delay: 25s;
-    }
     #footerrow {
         font-size: 1.3em;
+        height: 2.3em;
     }
     #name {
         display: table-cell;
@@ -160,6 +75,14 @@
             padding: 1.3em 0 1.3em 0;
             margin: 0.3em 2.5% 0.3em 2.5%;
             font-size: 2.5em;
+            min-height: 80px;
+        }
+    }
+
+    @media screen and (min-height: 760px) and (min-width: 760px){
+        .item {
+            font-size: 3em;
+            min-height: 100px;
         }
     }
 

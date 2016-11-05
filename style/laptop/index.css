@@ -10,17 +10,10 @@
     }
     .item {
         font-size: 3.5em;
-        width: 27.9%;
+        width: 28%;
+        min-width: 28%;
         padding-top: 1.08em;
         padding-bottom: 1.08em;
-    }
-    .item div {
-        position: absolute;
-        text-align: center;
-        padding: 0;
-        transform: translate(-50%, -50%);
-        width: 75%;
-        text-indent: 10px;
     }
     #footerrow {
         font-size: 1.48em;
